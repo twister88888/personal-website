@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './static/css/style.css';
 import './App.css';
 import Header from './components/Header';
-import Section from './components/Section';
 import Edge from './components/Edge';
 import SectionTitle from './components/SectionTitle';
 import List from './components/List';
@@ -123,42 +122,44 @@ class App extends Component {
     return (
       <div id='wrapper' className='clearfix' itemScope='' itemType='http://data-vocabulary.org/Person'>
         <Header />
-        <section className='tabsContainer clearfix'>
+        <main className='page js-page tabsContainer clearfix' role='main'>
+        {/*<section className='tabsContainer clearfix'>*/}
           <Edge />
-          <div className='innerBg'>
-            <article id='about' className='clearfix'>
-              <Section name='introduction'>
+          {/*quitar innerBg*/}
+          <div className='content innerBg'>
+            <article className='about js-about clearfix' id='about'>
+              <section className='about__info clearfix' id='introduction'>
                 <SectionTitle>/ Sobre mí</SectionTitle>
                 <p>Me llamo Juan Manuel Ortiz y soy programador web de Sevilla.
                 Soy freelance de sitios web, trabajo de calidad y profesional para crear tu página web o incorporar a tu proyecto como webmaster.</p>
-                <ul className='info'>
+                <ul className='about__info-list'>
                   <List label='Nombre' value='Juanma Ortiz'/>
                   <List label='Email' value='info@jmprogramadorweb.es' />
                 </ul>
-                <ul className='info'>
+                <ul className='about__info-list'>
                   <List label='Linkedin' value='Ver perfil' />
                   <List label='Teléfono' value='605 230 463' />
                 </ul>
-              </Section>
-              <Section name='skills'>
-                <div id='skills1'>
+              </section>
+              <section className='about__skills clearfix' id='skills'>
+                <div className='about__skill'>
                   <SectionTitle>/ Mis habilidades</SectionTitle>
-                  <ul id='graphics'>
-                    <Rating name='HTML5-CSS3' value='r1' />
-                    <Rating name='PHP' value='r3' />
-                    <Rating name='JavaScript' value='r3' />
+                  <ul className='about__list'>
+                    <Rating name='HTML5-CSS3' value='about__rating--r1' />
+                    <Rating name='PHP' value='about__rating--r3' />
+                    <Rating name='JavaScript' value='about__rating--r3' />
                   </ul>
                 </div>
-                <div id='skills2'>
+                <div className='about__skill'>
                   <SectionTitle>&nbsp;</SectionTitle>
-                  <ul id='programming'>
-                    <Rating name='SEO' value='r3' />
-                    <Rating name='Prestashop' value='r4' />
-                    <Rating name='Wordpress' value='r3' />
+                  <ul className='about__list'>
+                    <Rating name='SEO' value='about__rating--r3' />
+                    <Rating name='Prestashop' value='about__rating--r4' />
+                    <Rating name='Wordpress' value='about__rating--r3' />
                   </ul>
                 </div>
-              </Section>
-              <Section name='experience'>
+              </section>
+              <section className='about__experience clearfix' id='experience'>
                 <SectionTitle>/ Experiencia</SectionTitle>
                 <Position
                   name='Programador web'
@@ -199,31 +200,31 @@ class App extends Component {
                   <li>Desarrollo y actualización de páginas web en PHP con WordPress y Joomla.</li>
                   <li>Desarrollo de páginas a medida con PHP.</li>
                 </ul>
-              </Section>
-              <Section name='education'>
+              </section>
+              <section className='about__education clearfix' id='education'>
                 <SectionTitle>/ Formación</SectionTitle>
                 <Course
                   name='CF Superior en Administración de Sistemas Informáticos - IES Antonio Machado'
                   date='2007-2009'
                 />
-              </Section>
-              <Section name='education'>
+              </section>
+              <section className='about__education clearfix' id='education'>
                 <SectionTitle>/ Cursos independientes</SectionTitle>
                 {this.state.courses.length > 0 && this.state.courses.map(courses => (
                     <Course key={courses.name} name={courses.name} date={courses.date} />
                 ))}
-              </Section>
+              </section>
             </article>
-            <article id='portfolio' className='clearfix'>
+            <article className='portfolio js-portfolio clearfix' id='portfolio' >
               <SectionTitle>/ Portfolio</SectionTitle>
-              <ul id='category' className='filter'>
+              <ul className='portfolio_categories filter' id='category'>
                 <Category class='current all' name='Todo'/>
                 <Category class='WebDesign' name='Programación a medida'/>
                 <Category class='Animation' name='Tienda virtual'/>
                 <Category class='Wordpress' name='Wordpress'/>
               </ul>
-              <Section name='works'>
-                <ul id='items' className='portfolio'>
+              <section className='portfolio__works clearfix' id='works' >
+                <ul id='items' className='portfolio__list'>
                   {this.state.projects.length > 0 && this.state.projects.map(projects => (
                     <Project
                       key={projects.id}
@@ -234,11 +235,11 @@ class App extends Component {
                       path_preview={projects.path_preview} />
                   ))}
                 </ul>
-              </Section>
+              </section>
             </article>
-            <article id='contact' className='clearfix'>
+            <article className='contact js-contact clearfix' id='contact'>
               <SectionTitle>/ Contacto</SectionTitle>
-              <Section name='personalInfo'>
+              <section className='contact__personalinfo clearfix' id='personalInfo'>
                 <SectionSubTitle subtitle='Información de contacto' />
                 <ul className='personal'>
                   <List label='Tel' value='605 230 463' />
@@ -247,10 +248,10 @@ class App extends Component {
                 <ul className='personal'>
                   <List label='Email' value='pending' />
                 </ul>
-              </Section>
-              <Section name='contactForm'>
+              </section>
+              <section className='contact__area clearfix' id='contactForm'>
                 <SectionSubTitle subtitle='Rellena el formulario y en breve recibirás tu respuesta.' />
-                <form className='contactForm' method='post'>
+                <form className='contact__form contactForm' method='post'>
                   <Input
                     type='text'
                     name='name'
@@ -264,10 +265,10 @@ class App extends Component {
                   <Textarea name='message' placeholder='Tu mensaje' />
                   <Button value='Enviar tu mensaje' />
                 </form>
-              </Section>
+              </section>
             </article>
           </div>
-        </section>
+        </main>
       </div>
     );
   }

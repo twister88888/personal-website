@@ -4,7 +4,7 @@ import Nav from './Nav';
 
 const Header = () => {
   return (
-    <header className="clearfix">
+    <header className='clearfix' role='banner'>
       <Logo />
       <Nav />
     </header>

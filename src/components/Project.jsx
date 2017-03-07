@@ -2,7 +2,7 @@ import React from 'react';
 
 const Project  = props =>{
   return (
-    <li data-id={props.id} data-type={props.type} className='item'>
+    <li data-id={props.id} data-type={props.type} className='portfolio__item item'>
       <a className='folio' href={'images/images'+props.path} title={props.name}>
         <span className='plus'></span>
       </a>
