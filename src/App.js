@@ -132,30 +132,30 @@ class App extends Component {
                 <SectionTitle>/ Sobre mí</SectionTitle>
                 <p>Me llamo Juan Manuel Ortiz y soy programador web de Sevilla.
                 Soy freelance de sitios web, trabajo de calidad y profesional para crear tu página web o incorporar a tu proyecto como webmaster.</p>
-                <ul className='about__info-list'>
+                <ul className='about__info-list info'>
                   <List label='Nombre' value='Juanma Ortiz'/>
                   <List label='Email' value='info@jmprogramadorweb.es' />
                 </ul>
-                <ul className='about__info-list'>
+                <ul className='about__info-list info'>
                   <List label='Linkedin' value='Ver perfil' />
                   <List label='Teléfono' value='605 230 463' />
                 </ul>
               </section>
               <section className='about__skills clearfix' id='skills'>
-                <div className='about__skill'>
+                <div className='about__skill' id='skills1'>
                   <SectionTitle>/ Mis habilidades</SectionTitle>
                   <ul className='about__list'>
-                    <Rating name='HTML5-CSS3' value='about__rating--r1' />
-                    <Rating name='PHP' value='about__rating--r3' />
-                    <Rating name='JavaScript' value='about__rating--r3' />
+                    <Rating name='HTML5-CSS3' value='about__rating--r1 r1' />
+                    <Rating name='PHP' value='about__rating--r3 r3' />
+                    <Rating name='JavaScript' value='about__rating--r3 r3' />
                   </ul>
                 </div>
-                <div className='about__skill'>
+                <div className='about__skill' id='skills2'>
                   <SectionTitle>&nbsp;</SectionTitle>
                   <ul className='about__list'>
-                    <Rating name='SEO' value='about__rating--r3' />
-                    <Rating name='Prestashop' value='about__rating--r4' />
-                    <Rating name='Wordpress' value='about__rating--r3' />
+                    <Rating name='SEO' value='about__rating--r3 r3' />
+                    <Rating name='Prestashop' value='about__rating--r4 r4' />
+                    <Rating name='Wordpress' value='about__rating--r3 r3' />
                   </ul>
                 </div>
               </section>
