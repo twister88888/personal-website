@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
-import './static/css/style.css';
-import './App.css';
-import Header from './components/Header';
-import Edge from './components/Edge';
-import SectionTitle from './components/SectionTitle';
-import List from './components/List';
-import Rating from './components/Rating';
-import Position from './components/Position';
-import Course from './components/Course';
-import Project from './components/Project';
-import SectionSubTitle from './components/SectionSubTitle';
-import Category from './components/Category';
-import Input from './components/Input';
-import Textarea from './components/Textarea';
-import Button from './components/Button';
+import '../static/css/style.css';
+import '../static/css/app.css';
+import Header from './Header';
+import Edge from './Edge';
+import SectionTitle from './SectionTitle';
+import List from './List';
+import Rating from './Rating';
+import Position from './Position';
+import Course from './Course';
+import Project from './Project';
+import SectionSubTitle from './SectionSubTitle';
+import Category from './Category';
+import Input from './Input';
+import Textarea from './Textarea';
+import Button from './Button';
 
 
 class App extends Component {
