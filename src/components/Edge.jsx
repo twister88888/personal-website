@@ -1,5 +1,5 @@
 import React from 'react';
-import './../Edge.css';
+import '../static/css/edge.css';
 
 const Edge = () => {
   return (
