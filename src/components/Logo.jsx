@@ -1,6 +1,4 @@
 import React from 'react';
-import '../static/css/logo.css';
-
 
 const Logo = () => {
   return (

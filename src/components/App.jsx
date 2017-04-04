@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import '../static/css/style.css';
-import '../static/css/app.css';
-import '../static/css/font.css';
 import Header from './Header';
 import Edge from './Edge';
 import SectionTitle from './SectionTitle';

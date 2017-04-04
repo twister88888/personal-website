@@ -1,6 +1,5 @@
 import React from 'react';
-import '../static/css/nav.css';
-/*Quitar id*/
+
 const Nav = props => {
   return (
     <nav className='appbar js-appbar' role='navigation'>

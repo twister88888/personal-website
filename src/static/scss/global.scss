@@ -1,0 +1,161 @@
+body{
+	background:url('/images/pattern/pattern3.png') repeat;
+	font:100% Arial,'Signika';
+	line-height:20px;
+	font-weight:normal;
+	font-style:normal;
+	color:#999;
+}
+
+#wrapper{
+	margin:50px auto 30px auto;
+	width:780px;
+}
+
+header{
+	width:230px;
+	float:left;
+}
+
+.page{
+	width:525px;
+	float:left;
+	background:#e3e2e2;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-o-border-radius:4px;
+	-webkit-border-radius:4px;
+	padding:3px 3px 3px 0;
+	margin-left:7px;
+	margin-bottom:10px;
+	position:relative;
+}
+
+.content{
+	background:#fff;
+	margin:0 auto;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-o-border-radius:4px;
+	-webkit-border-radius:4px;
+	padding:20px 25px 35px 25px;
+}
+
+footer {
+	p{
+		color:#ccc;
+		font-size:11px;
+		margin-top:5px;
+		margin-left: 400px;
+	}
+}
+
+.clearfix:before,
+.clearfix:after{
+	content:"";
+	display:table;
+}
+
+.clearfix:after{
+	clear:both;
+}
+
+
+/* Tablet Portrait size -> standard 960 */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	#wrapper{width:750px;}
+	header{width:215px;}
+	.page {margin-left: 22px;width: 510px;}
+	.edge {left: 465px;}
+	.about{width:464px;}
+	.about__info ul li {padding: 6px 38px 5px 10px;}
+	.about__skill {margin-right: 66px;}
+	#portfolio{width:464px;}
+	.portfolio__works {margin:0}
+	ul li.item {margin-right: 3px;padding: 5px 2px 14px;}
+	.btnMore {margin-left: 330px;}
+	blockquote.style3 {padding-right: 20px;}
+	#contact{width:464px;}
+	#contact p.personal{margin-right: 15px;}
+	.contact__area textarea {width: 450px;}
+	footer p {margin-left: 395px;}
+}
+
+
+/* Mobile Landscape Size -> Tablet Portrait size*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#wrapper{width:480px;}
+	header{width:195px;}
+  .content {padding: 20px 22px 35px;}
+	.edge {left: 186px;}
+	.page {margin-left: 41px;width: 231px;}
+	.about{width:196px;}
+	.about__skill{margin-bottom: 10px;}
+	.about__skills li span {width: 125px;}
+	.about__info-list {margin-right: 3px;}
+	#portfolio{width:196px;}
+	.portfolio__works {margin-left: -5px;}
+	.portfolio_categories {padding-left: 0;}
+	.portfolio_categories li {padding: 3px 0px 3px 0px;}
+	li.item h3{width:190px;}
+	span.plus {left: 154px;top:79px;}
+	span.border { left: 51px;top: 165px;width: 90px;}
+	.portfolio_categories li #animated-line{display:none;}
+	#contact{width:196px;}
+	#contact p.personal, #contact ul.personal {margin-bottom: 10px;}
+	#contact .contact__personalinfo ul + ul {margin-left:0;}
+	.contact__area input[type="text"], #contact input[type="email"], #contact input[type="text"], #contact textarea {width:175px;}
+	#contact textarea {width:176px;}
+	footer p {margin-left: 256px;}
+}
+
+
+/* Mobile Portrait Size -> Mobile Landscape Size */
+@media only screen and (max-width: 479px) {
+	#wrapper{width:295px;}
+	header{width:270px;}
+	.content {padding: 20px 22px 35px;}
+	.edge {left: 226px;}
+	/*Main nav*/
+	/*.appbar li.active {background: url("images/nav-arrow-active.png") no-repeat scroll 101% center #FFFFFF;}*/
+	.page {margin-left: 10px;width: 271px;}
+	.logo {margin-bottom: 2px;}
+	.logo img {width: 271px;}
+	.logo div {top:196px;width:271px;}
+	.appbar li {width:267px;}
+	.appbar li > a {padding: 11px 10px 10px 195px;}
+
+	/*About tab */
+	.about{width:230px;}
+	.about__info-list {margin-right:23px;}
+	.about__skill{margin-bottom: 10px;}
+
+	/*Portfolio tab */
+	#portfolio{width:230px;}
+	span.border {top: 179px;left:58px;}
+	span.plus {left:180px;}
+	.portfolio_categories {padding-left:0;}
+
+
+	/*Contact tab */
+	#contact{width:230px;}
+	#contact p.personal, #contact ul.personal {margin-bottom: 10px;}
+	#contact .contact__personalinfo ul + ul {margin-left:0;}
+	.contact__area input[type="text"], #contact input[type="email"], #contact input[type="text"]{width:210px;}
+	#contact textarea {width:211px;}
+
+	/*Footer*/
+	footer p {margin-left: 50px;}
+}
+
+
+/*End media queries*/
+/*-------------------------------------------------------------------------*/
+.msgko{
+	font-size:12px;
+	font-weight:bold;
+	color:#548A68;
+	text-align:center;
+	padding-bottom:8px;
+	text-transform:uppercase;
+}
