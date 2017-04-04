@@ -1,0 +1,130 @@
+// colors
+
+// Main palette
+$gray-white: #ebebeb;
+$gray: #b5b5b5;
+$gray-lighter: #817f7f;
+$gray-dark: #333;
+$gray-gradient: #f6f6f6;
+
+$rose: #f7e7e7;
+$rose-dark: #e9c6c8;
+$rose-darker: #d8a6a9;
+$green: #e8faf2;
+$green-dark: #e1f3ea;
+
+$black: #000000;
+$white: #ffffff;
+
+$seashell: $gray-white;
+$orange: #FFA100;
+$orange-text: #FB8B00;
+$yellow: #f4cb00;
+$gray-line: $gray-white; // lines
+$gray-underline: lighten($gray, 20%);
+$red: #ef2942; // error red
+$blue-light: #e6f1f6;
+
+$overlay: rgba(255, 255, 255, 0.91);
+$transparent-text-block: rgba(255, 255, 255, 0.95);
+
+// fonts
+$sans-serif: Trebouchet, Helvetica, Arial, sans-serif;
+$serif: Georgia, serif;
+$lato: 'Lato', $sans-serif;
+$playfair: 'Playfair Display', $serif;
+
+// Width
+$baseWidth: 1400;
+$smallWidth: 320;
+$mediumWidth: 640;
+$largeWidth: 980;
+$extraLargeWidth: 1240;
+
+// Breakpoints
+$small: px-rem($smallWidth);
+$medium: px-rem($mediumWidth);
+$large: px-rem($largeWidth);
+$largeMin: px-rem($largeWidth - 1);
+$extralarge: px-rem($extraLargeWidth);
+
+// Padding
+$smallPadding: 10;
+$smallGridPadding: $smallPadding / 2;
+$largePadding: 20;
+$largeGridPadding: $largePadding / 2;
+
+// Animation
+$animationSpeedFast: 100ms;
+$animationSpeed: 500ms;
+$ease: cubic-bezier(0.420, 0.000, 0.580, 1.000);
+
+// Misc vars
+$widthLabel: px-rem(178);
+$widthBorder: 38;
+
+// Utils
+.center {
+    text-align: center;
+}
+
+%swatch {
+    border: 1px solid transparent;
+    border-radius: 50%;
+    display: inline-block;
+    height: px-rem(28);
+    width: px-rem(28);
+
+    a {
+        padding: px-rem(3);
+    }
+
+    a,
+    .swatch-square,
+    .swatch-circle {
+        border-radius: 50%;
+        float: left;
+    }
+
+    .swatch-square,
+    .swatch-circle{
+        height: px-rem(20);
+        width: px-rem(20);
+    }
+
+    &:hover {
+        border: 1px solid $gray;
+    }
+
+    &.selected {
+        border: 1px solid $gray-dark;
+    }
+
+    &.unselectable {
+        border: 1px solid $gray;
+        position: relative;
+        &:before {
+            background: $gray;
+            content: "";
+            display: block;
+            height: 25px;
+            left: 50%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transform: rotate(45deg) translateX(-50%);
+            width: 1px;
+        }
+    }
+}
+
+%borderbottom {
+    &:after {
+        @include line($gray);
+    }
+}
+
+%bordertop {
+    &:before {
+        @include line($gray);
+    }

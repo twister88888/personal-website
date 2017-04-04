@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../static/css/style.css';
 import '../static/css/app.css';
+import '../static/css/font.css';
 import Header from './Header';
 import Edge from './Edge';
 import SectionTitle from './SectionTitle';
@@ -122,27 +123,27 @@ class App extends Component {
     return (
       <div id='wrapper' className='clearfix' itemScope='' itemType='http://data-vocabulary.org/Person'>
         <Header />
-        <main className='page js-page tabsContainer clearfix' role='main'>
+        <main className='page js-page clearfix' role='main'>
         {/*<section className='tabsContainer clearfix'>*/}
           <Edge />
           {/*quitar innerBg*/}
-          <div className='content innerBg'>
+          <div className='content'>
             <article className='about js-about clearfix' id='about'>
-              <section className='about__info clearfix' id='introduction'>
+              <section className='about__info clearfix'>
                 <SectionTitle>/ Sobre mí</SectionTitle>
                 <p>Me llamo Juan Manuel Ortiz y soy programador web de Sevilla.
                 Soy freelance de sitios web, trabajo de calidad y profesional para crear tu página web o incorporar a tu proyecto como webmaster.</p>
-                <ul className='about__info-list info'>
+                <ul className='about__info-list'>
                   <List label='Nombre' value='Juanma Ortiz'/>
                   <List label='Email' value='info@jmprogramadorweb.es' />
                 </ul>
-                <ul className='about__info-list info'>
+                <ul className='about__info-list'>
                   <List label='Linkedin' value='Ver perfil' />
                   <List label='Teléfono' value='605 230 463' />
                 </ul>
               </section>
-              <section className='about__skills clearfix' id='skills'>
-                <div className='about__skill' id='skills1'>
+              <section className='about__skills clearfix'>
+                <div className='about__skill'>
                   <SectionTitle>/ Mis habilidades</SectionTitle>
                   <ul className='about__list'>
                     <Rating name='HTML5-CSS3' value='about__rating--r1 r1' />
@@ -150,7 +151,7 @@ class App extends Component {
                     <Rating name='JavaScript' value='about__rating--r3 r3' />
                   </ul>
                 </div>
-                <div className='about__skill' id='skills2'>
+                <div className='about__skill'>
                   <SectionTitle>&nbsp;</SectionTitle>
                   <ul className='about__list'>
                     <Rating name='SEO' value='about__rating--r3 r3' />
@@ -159,7 +160,7 @@ class App extends Component {
                   </ul>
                 </div>
               </section>
-              <section className='about__experience clearfix' id='experience'>
+              <section className='about__experience clearfix'>
                 <SectionTitle>/ Experiencia</SectionTitle>
                 <Position
                   name='Programador web'
@@ -201,14 +202,14 @@ class App extends Component {
                   <li>Desarrollo de páginas a medida con PHP.</li>
                 </ul>
               </section>
-              <section className='about__education clearfix' id='education'>
+              <section className='about__education clearfix'>
                 <SectionTitle>/ Formación</SectionTitle>
                 <Course
                   name='CF Superior en Administración de Sistemas Informáticos - IES Antonio Machado'
                   date='2007-2009'
                 />
               </section>
-              <section className='about__education clearfix' id='education'>
+              <section className='about__education clearfix'>
                 <SectionTitle>/ Cursos independientes</SectionTitle>
                 {this.state.courses.length > 0 && this.state.courses.map(courses => (
                     <Course key={courses.name} name={courses.name} date={courses.date} />
@@ -217,13 +218,13 @@ class App extends Component {
             </article>
             <article className='portfolio js-portfolio clearfix' id='portfolio' >
               <SectionTitle>/ Portfolio</SectionTitle>
-              <ul className='portfolio_categories filter' id='category'>
+              <ul className='portfolio_categories filter'>
                 <Category class='current all' name='Todo'/>
                 <Category class='WebDesign' name='Programación a medida'/>
                 <Category class='Animation' name='Tienda virtual'/>
                 <Category class='Wordpress' name='Wordpress'/>
               </ul>
-              <section className='portfolio__works clearfix' id='works' >
+              <section className='portfolio__works clearfix'>
                 <ul id='items' className='portfolio__list'>
                   {this.state.projects.length > 0 && this.state.projects.map(projects => (
                     <Project
@@ -239,7 +240,8 @@ class App extends Component {
             </article>
             <article className='contact js-contact clearfix' id='contact'>
               <SectionTitle>/ Contacto</SectionTitle>
-              <section className='contact__personalinfo clearfix' id='personalInfo'>
+              <section className='contact__personalinfo'></section>
+              <section className='contact__personalinfo clearfix'>
                 <SectionSubTitle subtitle='Información de contacto' />
                 <ul className='personal'>
                   <List label='Tel' value='605 230 463' />
@@ -249,7 +251,7 @@ class App extends Component {
                   <List label='Email' value='pending' />
                 </ul>
               </section>
-              <section className='contact__area clearfix' id='contactForm'>
+              <section className='contact__area clearfix'>
                 <SectionSubTitle subtitle='Rellena el formulario y en breve recibirás tu respuesta.' />
                 <form className='contact__form contactForm' method='post'>
                   <Input

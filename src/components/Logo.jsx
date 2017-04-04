@@ -1,8 +1,10 @@
 import React from 'react';
+import '../static/css/logo.css';
+
 
 const Logo = () => {
   return (
-    <figure className='logo' id='img'>
+    <figure className='logo'>
       <span className='logo__image' itemProp='photo'>
         <img src='images/programador-web-sevilla.jpg' alt='programador web sevilla' width='218' />
       </span>

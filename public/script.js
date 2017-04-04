@@ -6541,11 +6541,11 @@ $(document).ready(function() {
         transitionOut: "slideUp",
         animationSpeed: 800,
         tabActiveClass: "active",
-        tabs: " #mainNav > ul > li",
+        tabs: " .js-appbar > ul > li",
         transitionInEasing: "easeOutExpo",
         transitionOutEasing: "easeInOutExpo"
     });
-    $(".portfolio li").hover(function() {
+    $(".portfolio__list li").hover(function() {
         $(this).children("img").animate({
             opacity: .55
         }, "fast")
@@ -6554,24 +6554,24 @@ $(document).ready(function() {
             opacity: 1
         }, "slow")
     });
-    $(".portfolio a.folio").fancybox({
+    $(".portfolio__list a.folio").fancybox({
         "overlayShow": true,
         "opacity": true,
         "transitionIn": "elastic",
         "transitionOut": "none",
         "overlayOpacity": .8
     });
-    var $portfolioClone = $(".portfolio").clone();
+    var $portfolioClone = $(".portfolio__list").clone();
     $(".filter a").click(function(e) {
         $(".filter li").removeClass("current");
         var $filterClass = $(this).parent().attr("class");
         if ($filterClass == "all") var $filteredPortfolio = $portfolioClone.find("li");
         else var $filteredPortfolio = $portfolioClone.find("li[data-type~=" + $filterClass + "]");
-        $(".portfolio").quicksand($filteredPortfolio, {
+        $(".portfolio__list").quicksand($filteredPortfolio, {
             duration: 800,
             easing: "easeInOutQuad"
         }, function() {
-            $(".portfolio li").hover(function() {
+            $(".portfolio__list li").hover(function() {
                 $(this).children("img").animate({
                         opacity: .55
                     },
@@ -6581,7 +6581,7 @@ $(document).ready(function() {
                     opacity: 1
                 }, "slow")
             });
-            $(".portfolio a.folio").fancybox({
+            $(".portfolio__list a.folio").fancybox({
                 "overlayShow": true,
                 "opacity": true,
                 "transitionIn": "elastic",

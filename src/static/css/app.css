@@ -1,4 +1,3 @@
-/* Renombrar o.clearfix */
 body{
 	background:url('/images/pattern/pattern3.png') repeat;
 	font:100% Arial,'Signika';
@@ -18,143 +17,9 @@ header{
 	float:left;
 }
 
-/* Main navigation */
-.appbar{
-	margin-left:6px;
-}
-
-.appbar li{
-	display:inline-block;
-	margin-left:5px;
-	margin-bottom:5px;
-	width:215px;
-	height:40px;
-	border-right: 5px solid #e3e2e2;
-	float:left;
-	border-radius:4px;
-	-moz-border-radius:4px;
-	-o-border-radius:4px;
-	-webkit-border-radius:4px;
-	position:relative;
-	background: #ffffff; /* Old browsers */
-	background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), 				color-stop(100%,#ededed)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
-	background: linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
-}
-
-.appbar li > a{
-	color:#999;
-	display:inline-block;
-	padding:11px 10px 10px 142px;
-	background-repeat:no-repeat;
-	font-family: "Signika";
-	font-weight:300;
-	font-size:17px;
-	color:#787878;
-	width:65px;
-	height:21px;
-}
-
-.appbar li a.tab-about{
-	background-image: url(/images/about-ico.png);
-	background-position: 14px 7px;
-}
-
-.appbar li a.tab-portfolio{
-	background-image: url(/images/folio-ico.png);
-	background-position: 14px 7px;
-}
-
-.appbar li a.tab-blog{
-	background-image: url(/images/blog-ico.png);
-	background-position: 14px 7px;
-}
-
-.appbar li a.tab-contact{
-	background-image: url(/images/contact-ico.png);
-	background-position: 14px 7px;
-}
-
-.appbar li.active{
-	border-right: 5px solid #558e6a;
-	background:#fff  url(/images/nav-arrow-active.png) no-repeat 102% center;
-}
-
-.appbar li.active .tab-about{
-	background-image: url(/images/about-ico-active.png);
-	background-position: 14px 7px;
-	color:#558e6a;
-}
-
-.appbar li.active .tab-portfolio{
-	background-image: url(/images/folio-ico-active.png);
-	background-position: 14px 7px;
-	color:#558e6a;
-}
-
-.appbar li.active .tab-blog{
-	background-image: url(/images/blog-ico-active.png);
-	background-position: 14px 7px;
-	color:#558e6a;
-}
-
-.appbar li.active .tab-contact{
-	background-image: url(/images/contact-ico-active.png);
-	background-position: 14px 7px;
-	color:#558e6a;
-}
-
-
 /* End main navigation */
-#img{
-	margin-left:12px;
-	margin-bottom:50px;
-	position:relative;
-}
 
-#img img{
-	border-radius:4px;
-	-moz-border-radius:4px;
-	-o-border-radius:4px;
-	-webkit-border-radius:4px;
-}
-
-
-#img div{
-	background:#558e6a;
-	width:218px;
-	border-radius: 0px 0px 4px 4px;
-	-moz-border-radius:0px 0px 4px 4px;
-	-o-border-radius:0px 0px 4px 4px;
-	-webkit-border-radius:0px 0px 4px 4px;
-	text-align:center;
-	background:rgba(85,142,106,0.94);
-	margin-bottom:5px;
-	padding-top:10px;
-	position:absolute;
-	top:193px;
-	left:0;
-	line-height:28px;
-}
-
-#img div h1{
-	font-weight:bold;
-	font-size:23px;
-	color:#fff;
-	margin-bottom:3px;
-}
-
-#img div h2{
-
-	font-size:12px;
-	color:#fff;
-	padding-bottom: 3px;
-}
-
-.tabsContainer{
+.page{
 	width:525px;
 	float:left;
 	background:#e3e2e2;
@@ -168,13 +33,7 @@ header{
 	position:relative;
 }
 
-.edge{
-	position:absolute;
-	top:0;
-	left:480px;
-}
-
-.innerBg{
+.content{
 	background:#fff;
 	margin:0 auto;
 	border-radius:4px;
@@ -184,8 +43,6 @@ header{
 	padding:20px 25px 35px 25px;
 }
 
-
-
 footer p{
 	color:#ccc;
 	font-size:11px;
@@ -193,23 +50,20 @@ footer p{
 	margin-left: 400px;
 }
 
-
 /* End general style */
 
 /* About tab */
-
-
-#about{
+.about{
 	font-size:12px;
 	width:478px;
 }
 
-#about hgroup, p{
+.about p{
 	padding:0;
 	margin:0;
 }
 
-#introduction ul li {
+.about__info ul li {
 	background:#efefef;
 	border-radius: 4px;
 	-moz-border-radius:4px;
@@ -223,16 +77,16 @@ footer p{
 	border-left:3px solid #cccccc;
 }
 
-#introduction ul li span{
+.about__info ul li span{
 	font-weight:bold;
 }
 
-.info{
+.about__info-list{
 	float:left;
 	margin-right:8px;
 }
 
-#about h1{
+.about h1{
 	font-family: "Signika";
 	font-weight:400;
 	font-size:18px;
@@ -241,48 +95,45 @@ footer p{
 	padding:0;
 }
 
-
-#about h4{
+.about h4{
 	font-size:12px;
 	color:#666;
 	font-weight:bold;
 }
 
-#about h6{
+.about h6{
 	font-size:11px;
 	color:#333;
 	font-weight:bold;
 	font-style:italic;
 }
 
-#skills, #introduction, #experience{
+.about__skills, .about__info, .about__experience{
 	padding-bottom:10px;
 	margin-bottom:10px;
 	border-bottom:1px dotted #e3e2e2;
 }
 
-#education{
+.about__education{
 	margin-bottom:20px;
 }
 
-
-
-#skills1, #skills2 {
+.about__skill {
 	float: left;
 	margin-right: 74px;
 	width: 165px;
 }
 
-#skills ul  {
+.about__skills ul  {
 	float:left;
 	width:237px;
 }
 
-#skills ul + ul {
+.about__skills ul + ul {
 	margin-left:4px;
 }
 
-#skills  li {
+.about__skills li {
 	color:#666;
 	font-size:12px;
 	font-weight:bold;
@@ -291,66 +142,26 @@ footer p{
 	width:200px;
 }
 
-#skills  li span {
+.about__skills li span {
 	float:right;
 	width:113px;
 	height:17px;
 }
 
-#skills  li span.r1{background: url(/images/rating-sprite.png) no-repeat scroll 0 -56px}
-#skills  li span.r2{background: url(/images/rating-sprite.png) no-repeat scroll 0 -76px}
-#skills  li span.r3{background: url(/images/rating-sprite.png) no-repeat scroll 0 -36px}
-#skills  li span.r4{background: url(/images/rating-sprite.png) no-repeat scroll 0 -56px}
-#skills  li span.r5{background: url(/images/rating-sprite.png) no-repeat scroll 0 -76px}
-
-#skills  li span.r6{background: url(/images/rating-sprite.png) no-repeat scroll 0 -56px}
-#skills  li span.r7{background: url(/images/rating-sprite.png) no-repeat scroll 0 -76px}
-#skills  li span.r8{background: url(/images/rating-sprite.png) no-repeat scroll 0 -36px}
-#skills  li span.r9{background: url(/images/rating-sprite.png) no-repeat scroll 0 -76px}
-#skills  li span.r10{background: url(/images/rating-sprite.png) no-repeat scroll 0 -56px}
-
-
-
-
-a.vcardButton {
-	margin-left:330px;
-	background:#558e6a;
-	border:1px solid #558e6a;
-	width:auto;
-	padding:8px 15px;
-	border-radius:3px;
-	-moz-border-radius:3px;
-	-o-border-radius:3px;
-	-webkit-border-radius:3px;
-	font-size:12px;
-	color:#ffffff;
-	background-image: url(/images/bg-button.png);
-	background-position: 0 0;
-	background-repeat: repeat-x;
-	-moz-transition: all 0.4s ease-in-out;
-	-o-transition: all 0.4s ease-in-out;
-	-ms-transition: all 0.4s ease-in-out;
-	transition: all 0.4s ease-in-out;
-}
-
-a.vcardButton:hover{
-	background:#777777;
-	border:1px solid #777777;
-	background-image: url(/images/bg-button.png);
-	background-position: 0 0;
-	background-repeat: repeat-x;
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-	-moz-box-shadow:0 1px 1px rgba(0, 0, 0, 0.2);
-	-o-box-shadow:0 1px 1px rgba(0, 0, 0, 0.2);
-	-webkit-box-shadow:0 1px 1px rgba(0, 0, 0, 0.2);
-}
-
+.about__skills li span.r1{background: url(/images/rating-sprite.png) no-repeat scroll 0 -56px}
+.about__skills li span.r2{background: url(/images/rating-sprite.png) no-repeat scroll 0 -76px}
+.about__skills li span.r3{background: url(/images/rating-sprite.png) no-repeat scroll 0 -36px}
+.about__skills li span.r4{background: url(/images/rating-sprite.png) no-repeat scroll 0 -56px}
+.about__skills li span.r5{background: url(/images/rating-sprite.png) no-repeat scroll 0 -76px}
+.about__skills li span.r6{background: url(/images/rating-sprite.png) no-repeat scroll 0 -56px}
+.about__skills li span.r7{background: url(/images/rating-sprite.png) no-repeat scroll 0 -76px}
+.about__skills li span.r8{background: url(/images/rating-sprite.png) no-repeat scroll 0 -36px}
+.about__skills li span.r9{background: url(/images/rating-sprite.png) no-repeat scroll 0 -76px}
+.about__skills li span.r10{background: url(/images/rating-sprite.png) no-repeat scroll 0 -56px}
 
 /* End about tab */
 
-
 /* Portfolio tab */
-
 #portfolio{
 	width: 478px;
 }
@@ -375,19 +186,19 @@ a.vcardButton:hover{
 	border-bottom:1px dotted #e3e2e2;
 }
 
-ul#category{
+.portfolio_categories{
 	padding-left: 23px;
 	border-bottom:1px dotted #e3e2e2;
 	position:relative;
 }
 
-ul#category li {
+.portfolio_categories li {
 	display:inline-block;
 	padding:8px;
 	padding: 3px 3px 3px 6px;
 }
 
-ul#category li a{
+.portfolio_categories li a{
 	color:#777;
 	display:inline-block;
 	font-size:14px;
@@ -399,31 +210,15 @@ ul#category li a{
 	transition: all 0.4s ease-in-out;
 }
 
-ul#category li span{
+.portfolio_categories li span{
 	color:#777;
 }
 
-ul#category li a:hover{
-
+.portfolio_categories li a:hover{
 	color:#558e6a !important;
-
-
 }
 
-#animated-line {
-	position: absolute;
-	bottom: -2px;
-	left: 0;
-	width: 100px;
-	height: 1px;
-	background: #558e6a;
-	padding:0 !important;
-}
-
-
-
-
-#works{
+.portfolio__works{
 	margin-left:1px;
 }
 
@@ -435,9 +230,7 @@ ul#category li a:hover{
 	transition: all 0.4s ease-in-out;
 }
 
-
-
-ul li.item {
+.item {
 	float: left;
 	margin-right: 3px;
 	margin-top: 15px;
@@ -445,9 +238,9 @@ ul li.item {
 	position:relative;
 }
 
-ul li.item img {width:100%;}
+.item img {width:100%;}
 
-li.item h3{
+.item h3{
 	font-weight:bold;
 	margin-top:5px;
 	color:#666;
@@ -457,7 +250,7 @@ li.item h3{
 	padding-bottom:10px;
 }
 
-span.border {
+.item .border {
 	border-bottom: 1px solid #558e6a;
 	height: 1px;
 	left: 62px;
@@ -466,7 +259,7 @@ span.border {
 	width: 110px;
 }
 
-span.plus {
+.item .plus {
 	background:url(/images/zoom.png) no-repeat;
 	height: 39px;
 	left: 189px;
@@ -478,16 +271,13 @@ span.plus {
 	z-index:100;
 }
 
-li.item h3 span{
+.item h3 span{
 	font-weight:normal;
 	margin-top:5px;
 	color:#558e6a;
 }
 
 /* End portfolio tab */
-
-
-
 .imgInfo{
 	position:relative;
 	margin-bottom:10px;
@@ -498,7 +288,7 @@ li.item h3 span{
 	height:150px;
 }
 
-.info{
+.about__info-list{
 	position:relative;
 	margin-bottom:10px;
 }
@@ -536,85 +326,10 @@ blockquote.style3{
 	padding-right:26px;
 }
 
-
-
-.btnMore {
-	margin-left:340px;
-	background:#558e6a;
-	border:1px solid #558e6a;
-	width:auto;
-	padding:8px 15px;
-	border-radius:3px;
-	-moz-border-radius:3px;
-	-o-border-radius:3px;
-	-webkit-border-radius:3px;
-	font-size:12px;
-	color:#ffffff;
-	background-image: url(/images/bg-button.png);
-	background-position: 0 0;
-	background-repeat: repeat-x;
-	-moz-transition: all 0.4s ease-in-out;
-	-o-transition: all 0.4s ease-in-out;
-	-ms-transition: all 0.4s ease-in-out;
-	transition: all 0.4s ease-in-out;
-}
-
-.btnMore:hover{
-	background:#777777;
-	border:1px solid #777777;
-	background-image: url(/images/bg-button.png);
-	background-position: 0 0;
-	background-repeat: repeat-x;
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-	-moz-box-shadow:0 1px 1px rgba(0, 0, 0, 0.2);
-	-o-box-shadow:0 1px 1px rgba(0, 0, 0, 0.2);
-	-webkit-box-shadow:0 1px 1px rgba(0, 0, 0, 0.2);
-}
-
-
-.read-more{
-	display:none;
-	margin-top:25px;
-}
-.highlight-1{
-	font-weight:bold;
-	color:#555555;
-}
-
-.highlight-2{
-	text-decoration:underline;
-	color:#558e6a;
-}
-
-.highlight-3{
-	background:#555555;
-	padding:2px;
-	color:#ffffff;
-}
-
-
-
-
-.selected{
-	background:#558e6a;
-	border:1px solid #558e6a;
-	background-image: url(/images/bg-button.png);
-	background-position: 0 0;
-	background-repeat: repeat-x;
-	border-radius:3px;
-	-moz-border-radius:3px;
-	-o-border-radius:3px;
-	-webkit-border-radius:3px;
-	padding:5px 8px 5px 8px;
-	color:#ffffff !important;
-}
-
-
 /* End blog tab */
 
 
 /* Contact tab */
-
 #contact{
 	width: 478px;
 }
@@ -634,12 +349,6 @@ blockquote.style3{
 	margin-bottom:10px;
 }
 
-
-#map{
-	height:200px;
-	border: 1px solid #e3e2e2;
-}
-
 #contact p.personal{
 	font-size:12px;
 	width:130px;
@@ -651,22 +360,22 @@ blockquote.style3{
 	float:left;
 }
 
-#contact #personalInfo ul + ul{
+#contact .contact__personalinfo ul + ul{
 	margin-left:28px;
 }
 
-#personalInfo, #mapHolder{
+.contact__personalinfo, #mapHolder{
 	margin-bottom:10px;
 	padding-bottom:12px;
 	border-bottom:1px dotted #e3e2e2;
 }
 
-#personalInfo ul.personal span{
+.contact__personalinfo ul.personal span{
 	font-weight:bold;
 	color: #666;
 }
 
-#contactForm input[type="text"], input[type="email"], #contactForm textarea{
+.contact__area input[type="text"], input[type="email"], .contact__area textarea{
 	margin-bottom:10px;
 	padding-left:10px;
 	moz-transition: border 0.3s ease 0s, color 0.3s ease-out 0s;
@@ -687,19 +396,19 @@ blockquote.style3{
 }
 
 
-#contactForm input[type="text"]:hover, #contact input[type="email"]:hover,  input[type="email"]:hover, #contact textarea:hover  {
+.contact__area input[type="text"]:hover, #contact input[type="email"]:hover,  input[type="email"]:hover, #contact textarea:hover  {
 	background:#fff;
 	border:1px solid #c0c0c0;
 	color:#558e6a;
 }
 
 
-#contactForm input[type="text"],  #contact input[type="email"], #contact input[type="text"] {
+.contact__area input[type="text"],  #contact input[type="email"], #contact input[type="text"] {
 	width: 300px;
 	height: 27px;
 }
 
-#contactForm textarea {
+.contact__area textarea {
 	width: 460px;
 	height: 115px;
 	display: block;
@@ -707,7 +416,7 @@ blockquote.style3{
 	margin-bottom:15px;
 }
 
-#contactForm input#submit {
+.contact__area input#submit {
 	background-color:#558e6a;
 	border:1px solid #558e6a;
 	width:auto;
@@ -734,7 +443,7 @@ blockquote.style3{
 	transition: all 0.4s ease-in-out;
 }
 
-#contactForm input#submit:hover{
+.contact__area input#submit:hover{
 	background-color:#777;
 	border:1px solid #777;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
@@ -742,7 +451,6 @@ blockquote.style3{
 	-o-box-shadow:0 1px 1px rgba(0, 0, 0, 0.2);
 	-webkit-box-shadow:0 1px 1px rgba(0, 0, 0, 0.2);
 }
-
 
 label.error{
 	display:block;
@@ -753,39 +461,6 @@ label.error{
 }
 
 /* End contact tab */
-
-
-/* Style switcher*/
-#styleSwitcher{
-	width:45px;
-	background:#e3e2e2;
-	border-radius:4px;
-	-moz-border-radius:4px;
-	-o-border-radius:4px;
-	-webkit-border-radius:4px;
-	padding:3px 3px 3px 0;
-	position:absolute;
-	left:0;
-	top:200px;
-}
-
-#inset{
-	background:#fff;
-	margin:0 auto;
-	border-radius:4px;
-	-moz-border-radius:4px;
-	-o-border-radius:4px;
-	-webkit-border-radius:4px;
-	padding:10px 10px 10px 11px;
-}
-#styleSwitcher a{margin-bottom:5px;display:block;width:25px;height:25px;}
-#styleSwitcher img{width:25px;height:25px;}
-#styleSwitcher a.orange{background:#EB874F;}
-#styleSwitcher a.red{background:#CD5353;}
-#styleSwitcher a.green{background:#558e6a;}
-
-
-/* End style switcher*/
 
 /* Clear float style*/
 .clearfix:before,
@@ -813,22 +488,21 @@ label.error{
 	/* Header */
 	header{width:215px;}
 
-	/* tabsContainer */
-	.tabsContainer {margin-left: 22px;width: 510px;}
+	/* page */
+	.page {margin-left: 22px;width: 510px;}
 
 	/*Edge*/
 	.edge {left: 465px;}
 
 	/*About tab */
-	#about{width:464px;}
-	#introduction ul li {padding: 6px 38px 5px 10px;}
-	#skills1, #skills2 {margin-right: 66px;}
-	a.vcardButton{margin-left:322px;}
+	.about{width:464px;}
+	.about__info ul li {padding: 6px 38px 5px 10px;}
+	.about__skill {margin-right: 66px;}
 
 
 	/*Portfolio tab */
 	#portfolio{width:464px;}
-	#works {margin:0}
+	.portfolio__works {margin:0}
 	ul li.item {margin-right: 3px;padding: 5px 2px 14px;}
 
 
@@ -839,14 +513,10 @@ label.error{
 	/* Contact tab */
 	#contact{width:464px;}
 	#contact p.personal{margin-right: 15px;}
-	#contactForm textarea {width: 450px;}
+	.contact__area textarea {width: 450px;}
 
 	/* Footer */
 	footer p {margin-left: 395px;}
-
-	/*Styleswitcher*/
-	#styleSwitcher{display:none;}
-
 }
 
 
@@ -858,32 +528,31 @@ label.error{
 	/* Header */
 	header{width:195px;}
 
-	/* innerBg*/
-	.innerBg {padding: 20px 22px 35px;}
+	/* content */
+	.content {padding: 20px 22px 35px;}
 
 	/*Edge*/
 	.edge {left: 186px;}
 
-	/* tabsContainer */
-	.tabsContainer {margin-left: 41px;width: 231px;}
+	/* page */
+	.page {margin-left: 41px;width: 231px;}
 
 	/*About tab */
-	#about{width:196px;}
-	#skills1{margin-bottom: 10px;}
-	#skills li span {width: 125px;}
-	a.vcardButton{margin-left:49px;}
-	.info {margin-right: 3px;}
+	.about{width:196px;}
+	.about__skill{margin-bottom: 10px;}
+	.about__skills li span {width: 125px;}
+	.about__info-list {margin-right: 3px;}
 
 
 	/*Portfolio tab */
 	#portfolio{width:196px;}
-	#works {margin-left: -5px;}
-	ul#category {padding-left: 0;}
-	ul#category li {padding: 3px 0px 3px 0px;}
+	.portfolio__works {margin-left: -5px;}
+	.portfolio_categories {padding-left: 0;}
+	.portfolio_categories li {padding: 3px 0px 3px 0px;}
 	li.item h3{width:190px;}
 	span.plus {left: 154px;top:79px;}
 	span.border { left: 51px;top: 165px;width: 90px;}
-	#category li #animated-line{display:none;}
+	.portfolio_categories li #animated-line{display:none;}
 
 
 
@@ -891,16 +560,12 @@ label.error{
 	/*Contact tab */
 	#contact{width:196px;}
 	#contact p.personal, #contact ul.personal {margin-bottom: 10px;}
-	#pagination #prev {margin-right: 92px;}
-	#contact #personalInfo ul + ul {margin-left:0;}
-	#contactForm input[type="text"], #contact input[type="email"], #contact input[type="text"], #contact textarea {width:175px;}
+	#contact .contact__personalinfo ul + ul {margin-left:0;}
+	.contact__area input[type="text"], #contact input[type="email"], #contact input[type="text"], #contact textarea {width:175px;}
 	#contact textarea {width:176px;}
 
 	/*Footer*/
 	footer p {margin-left: 256px;}
-
-	#styleSwitcher{display:none;}
-
 }
 
 
@@ -913,9 +578,9 @@ label.error{
 	/* Header */
 	header{width:270px;}
 
-	/* innerBg*/
+	/* content*/
 
-	.innerBg {padding: 20px 22px 35px;}
+	.content {padding: 20px 22px 35px;}
 
 	/*Edge*/
 
@@ -924,40 +589,35 @@ label.error{
 	/*Main nav*/
 	/*.appbar li.active {background: url("images/nav-arrow-active.png") no-repeat scroll 101% center #FFFFFF;}*/
 
-	/*tabsContainer*/
-	.tabsContainer {margin-left: 10px;width: 271px;}
-	#img {margin-bottom: 2px;}
-	#img img {width: 271px;}
-	#img div {top:196px;width:271px;}
+	/*page*/
+	.page {margin-left: 10px;width: 271px;}
+	.logo {margin-bottom: 2px;}
+	.logo img {width: 271px;}
+	.logo div {top:196px;width:271px;}
 	.appbar li {width:267px;}
 	.appbar li > a {padding: 11px 10px 10px 195px;}
 
 	/*About tab */
-	#about{width:230px;}
-	.info {margin-right:23px;}
-	#skills1{margin-bottom: 10px;}
-	a.vcardButton{margin-left:80px;}
+	.about{width:230px;}
+	.about__info-list {margin-right:23px;}
+	.about__skill{margin-bottom: 10px;}
 
 	/*Portfolio tab */
 	#portfolio{width:230px;}
 	span.border {top: 179px;left:58px;}
 	span.plus {left:180px;}
-	ul#category {padding-left:0;}
+	.portfolio_categories {padding-left:0;}
 
 
 	/*Contact tab */
 	#contact{width:230px;}
 	#contact p.personal, #contact ul.personal {margin-bottom: 10px;}
-	#contact #personalInfo ul + ul {margin-left:0;}
-	#contactForm input[type="text"], #contact input[type="email"], #contact input[type="text"]{width:210px;}
+	#contact .contact__personalinfo ul + ul {margin-left:0;}
+	.contact__area input[type="text"], #contact input[type="email"], #contact input[type="text"]{width:210px;}
 	#contact textarea {width:211px;}
 
 	/*Footer*/
 	footer p {margin-left: 50px;}
-
-	/*Styleswitcher*/
-	#styleSwitcher{display:none;}
-
 }
 
 
