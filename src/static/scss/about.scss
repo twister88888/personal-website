@@ -1,98 +1,98 @@
 .about{
-	font-size:12px;
-	width:478px;
+	font-size: px-rem(12);
+	width: px-rem(478);
 
 	p{
-		padding:0;
-		margin:0;
+		padding: 0;
+		margin: 0;
 	}
 
 	h1{
-		font-family: "Signika";
-		font-weight:400;
-		font-size:18px;
-		color:#558e6a;
-		margin:0 0 10px 0;
-		padding:0;
+		font-family: $signika;
+		font-weight: 400;
+		font-size: px-rem(18);
+		color: #558e6a;
+		margin: 0 0 px-rem(10) 0;
+		padding: 0;
 	}
 
 	h4{
-		font-size:12px;
-		color:#666;
-		font-weight:bold;
+		font-size: px-rem(12);
+		color: #666;
+		font-weight: bold;
 	}
 
 	h6{
-		font-size:11px;
-		color:#333;
-		font-weight:bold;
-		font-style:italic;
+		font-size: px-rem(11);
+		color: #333;
+		font-weight: bold;
+		font-style: italic;
 	}
 }
 
 .about__info-list{
 	float:left;
-	margin-right:8px;
+	margin-right: px-rem(8);
 
 	li{
-		background:#efefef;
-		border-radius: 4px;
-		-moz-border-radius:4px;
-		-o-border-radius:4px;
-		-webkit-border-radius:4px;
-		color: #666666;
-		font-size: 11px;
-		margin-bottom: 10px;
-		margin-top: 9px;
-		padding: 6px 44px 5px 10px;
-		border-left:3px solid #cccccc;
-		font-weight:bold;
+		background: #efefef;
+		border-radius: $border-radius;
+		-moz-border-radius: $border-radius;
+		-o-border-radius: $border-radius;
+		-webkit-border-radius: $border-radius;
+		color: #666;
+		font-size: px-rem(11);
+		margin-bottom: px-rem(10);
+		margin-top: px-rem(9);
+		padding: px-rem(6) px-rem(44) px-rem(5) px-rem(10);
+		border-left: 3px solid #ccc;
+		font-weight: bold;
 	}
 }
 
 .about__skills,
 .about__info,
 .about__experience{
-	padding-bottom:10px;
-	margin-bottom:10px;
-	border-bottom:1px dotted #e3e2e2;
+	padding-bottom: px-rem(10);
+	margin-bottom: px-rem(10);
+	border-bottom: 1px dotted #e3e2e2;
 }
 
 .about__education{
-	margin-bottom:20px;
+	margin-bottom: px-rem(20);
 }
 
 .about__skills{
 	ul{
-		float:left;
-		width:237px;
+		float: left;
+		width: px-rem(237);
 	}
 
 	li{
-		color:#666;
-		font-size:12px;
-		font-weight:bold;
-		padding-bottom:3px;
-		float:left;
-		width:200px;
+		color: #666;
+		font-size: px-rem(12);
+		font-weight: bold;
+		padding-bottom: px-rem(3);
+		float: left;
+		width: px-rem(200);
 	}
 
 	span{
-		float:right;
-		width:113px;
-		height:17px;
+		float: right;
+		width: px-rem(113);
+		height: px-rem(17);
 	}
 
-	.r1{background: url(/images/rating-sprite.png) no-repeat scroll 0 -56px}
-	.r2{background: url(/images/rating-sprite.png) no-repeat scroll 0 -76px}
-	.r3{background: url(/images/rating-sprite.png) no-repeat scroll 0 -36px}
-	.r4{background: url(/images/rating-sprite.png) no-repeat scroll 0 -56px}
-	.r5{background: url(/images/rating-sprite.png) no-repeat scroll 0 -76px}
-	.r6{background: url(/images/rating-sprite.png) no-repeat scroll 0 -56px}
-	.r7{background: url(/images/rating-sprite.png) no-repeat scroll 0 -76px}
-	.r8{background: url(/images/rating-sprite.png) no-repeat scroll 0 -36px}
-	.r9{background: url(/images/rating-sprite.png) no-repeat scroll 0 -76px}
-	.r10{background: url(/images/rating-sprite.png) no-repeat scroll 0 -56px}
+	.r1{background: url(/images/rating-sprite.png) no-repeat scroll 0 px-rem(-56)}
+	.r2{background: url(/images/rating-sprite.png) no-repeat scroll 0 px-rem(-76)}
+	.r3{background: url(/images/rating-sprite.png) no-repeat scroll 0 px-rem(-36)}
+	.r4{background: url(/images/rating-sprite.png) no-repeat scroll 0 px-rem(-56)}
+	.r5{background: url(/images/rating-sprite.png) no-repeat scroll 0 px-rem(-76)}
+	.r6{background: url(/images/rating-sprite.png) no-repeat scroll 0 px-rem(-56)}
+	.r7{background: url(/images/rating-sprite.png) no-repeat scroll 0 px-rem(-76)}
+	.r8{background: url(/images/rating-sprite.png) no-repeat scroll 0 px-rem(-36)}
+	.r9{background: url(/images/rating-sprite.png) no-repeat scroll 0 px-rem(-76)}
+	.r10{background: url(/images/rating-sprite.png) no-repeat scroll 0 px-rem(-56)}
 }
 
 

@@ -1,0 +1,70 @@
+// fonts
+$signika: 'Signika', Arial;
+$arial: Arial;
+// colors
+$gray-white: #ccc;
+$gray: #e3e2e2;
+$gray-lighter: #999;
+
+$black: #000;
+$white: #fff;
+
+//border-radius
+$border-radius: px-rem(4);
+// Main palette
+$gray-dark: #333;
+$gray-gradient: #f6f6f6;
+
+$rose: #f7e7e7;
+$rose-dark: #e9c6c8;
+$rose-darker: #d8a6a9;
+$green: #e8faf2;
+$green-dark: #e1f3ea;
+
+
+$seashell: $gray-white;
+$orange: #FFA100;
+$orange-text: #FB8B00;
+$yellow: #f4cb00;
+$gray-line: $gray-white; // lines
+$gray-underline: lighten($gray, 20%);
+$red: #ef2942; // error red
+$blue-light: #e6f1f6;
+
+$overlay: rgba(255, 255, 255, 0.91);
+$transparent-text-block: rgba(255, 255, 255, 0.95);
+
+
+// Width
+$baseWidth: 1400;
+$smallWidth: 320;
+$mediumWidth: 640;
+$largeWidth: 980;
+$extraLargeWidth: 1240;
+
+// Breakpoints
+$small: px-rem($smallWidth);
+$medium: px-rem($mediumWidth);
+$large: px-rem($largeWidth);
+$largeMin: px-rem($largeWidth - 1);
+$extralarge: px-rem($extraLargeWidth);
+
+// Padding
+$smallPadding: 10;
+$smallGridPadding: $smallPadding / 2;
+$largePadding: 20;
+$largeGridPadding: $largePadding / 2;
+
+// Animation
+$animationSpeedFast: 100ms;
+$animationSpeed: 500ms;
+$ease: cubic-bezier(0.420, 0.000, 0.580, 1.000);
+
+// Misc vars
+$widthLabel: px-rem(178);
+$widthBorder: 38;
+
+// Utils
+.center {
+    text-align: center;
+}
