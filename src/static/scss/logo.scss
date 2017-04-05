@@ -1,43 +1,42 @@
 .logo{
-	margin-left:12px;
-	margin-bottom:50px;
-	position:relative;
+	margin-left: px-rem(12);
+	margin-bottom: px-rem(50);
+	position: relative;
+
+	img{
+		border-radius: $border-radius;
+		-moz-border-radius: $border-radius;
+		-o-border-radius: $border-radius;
+		-webkit-border-radius: $border-radius;
+	}
+
+	h1{
+		font-weight: bold;
+		font-size: px-rem(23);
+		color: $white;
+		margin-bottom: px-rem(3);
+	}
+
+	h2{
+		font-size: px-rem(12);
+		color: $white;
+		padding-bottom: px-rem(3);
+	}
 }
 
-.logo img{
-	border-radius:4px;
-	-moz-border-radius:4px;
-	-o-border-radius:4px;
-	-webkit-border-radius:4px;
-}
-
-.logo div{
-	background:#558e6a;
-	width:218px;
+.logo__info{
+	background: #558e6a;
+	width: px-rem(218);
 	border-radius: 0px 0px 4px 4px;
-	-moz-border-radius:0px 0px 4px 4px;
-	-o-border-radius:0px 0px 4px 4px;
-	-webkit-border-radius:0px 0px 4px 4px;
-	text-align:center;
-	background:rgba(85,142,106,0.94);
-	margin-bottom:5px;
-	padding-top:10px;
-	position:absolute;
-	top:193px;
-	left:0;
-	line-height:28px;
-}
-
-.logo div h1{
-	font-weight:bold;
-	font-size:23px;
-	color:#fff;
-	margin-bottom:3px;
-}
-
-.logo div h2{
-
-	font-size:12px;
-	color:#fff;
-	padding-bottom: 3px;
+	-moz-border-radius: 0px 0px 4px 4px;
+	-o-border-radius: 0px 0px 4px 4px;
+	-webkit-border-radius: 0px 0px 4px 4px;
+	text-align: center;
+	background: rgba(85,142,106,0.94);
+	margin-bottom: px-rem(5);
+	padding-top: px-rem(10);
+	position: absolute;
+	top: px-rem(193);
+	left: 0;
+	line-height: px-rem(28);
 }
