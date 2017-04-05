@@ -1,77 +1,77 @@
-/* Main navigation */
 .appbar{
-	margin-left:6px;
+	margin-left: px-rem(6);
+
+	li{
+		display:inline-block;
+		margin-left: px-rem(5);
+		margin-bottom: px-rem(5);
+		width: px-rem(215);
+		height: px-rem(40);
+		border-right: 5px solid #e3e2e2;
+		float: left;
+		border-radius: $border-radius;
+		-moz-border-radius: $border-radius;
+		-o-border-radius: $border-radius;
+		-webkit-border-radius: $border-radius;
+		position: relative;
+		background: $white;
+		background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), 				color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
+		background: linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
+
+		& > a{
+			color: #999;
+			display: inline-block;
+			padding: px-rem(11) px-rem(10) px-rem(10) px-rem(142);
+			background-repeat: no-repeat;
+			font-family: $signika;
+			font-weight: 300;
+			font-size: px-rem(17);
+			color: #787878;
+			width: px-rem(65);
+			height: px-rem(21);
+		}
+
+		&.active{
+			border-right: 5px solid $green;
+			background: $white url(/images/nav-arrow-active.png) no-repeat 102% center;
+
+			.appbar__link--about{
+				background-image: url(/images/about-ico-active.png);
+				background-position: px-rem(14) px-rem(7);
+				color: $green;
+			}
+
+			.appbar__link--portfolio{
+				background-image: url(/images/folio-ico-active.png);
+				background-position: px-rem(14) px-rem(7);
+				color: $green;
+			}
+
+			.appbar__link--contact{
+				background-image: url(/images/contact-ico-active.png);
+				background-position: px-rem(14) px-rem(7);
+				color: $green;
+			}
+		}
+	}
 }
 
-.appbar li{
-	display:inline-block;
-	margin-left:5px;
-	margin-bottom:5px;
-	width:215px;
-	height:40px;
-	border-right: 5px solid #e3e2e2;
-	float:left;
-	border-radius:4px;
-	-moz-border-radius:4px;
-	-o-border-radius:4px;
-	-webkit-border-radius:4px;
-	position:relative;
-	background: #ffffff; /* Old browsers */
-	background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), 				color-stop(100%,#ededed)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
-	background: linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
-}
 
-.appbar li > a{
-	color:#999;
-	display:inline-block;
-	padding:11px 10px 10px 142px;
-	background-repeat:no-repeat;
-	font-family: "Signika";
-	font-weight:300;
-	font-size:17px;
-	color:#787878;
-	width:65px;
-	height:21px;
-}
-
-.appbar .appbar__link--about{
+.appbar__link--about{
 	background-image: url(/images/about-ico.png);
-	background-position: 14px 7px;
+	background-position: px-rem(14) px-rem(7);
 }
 
-.appbar .appbar__link--portfolio{
+.appbar__link--portfolio{
 	background-image: url(/images/folio-ico.png);
-	background-position: 14px 7px;
+	background-position: px-rem(14) px-rem(7);
 }
 
-.appbar .appbar__link--contact{
+.appbar__link--contact{
 	background-image: url(/images/contact-ico.png);
-	background-position: 14px 7px;
-}
-
-.appbar li.active{
-	border-right: 5px solid #558e6a;
-	background:#fff  url(/images/nav-arrow-active.png) no-repeat 102% center;
-}
-
-.appbar li.active .appbar__link--about{
-	background-image: url(/images/about-ico-active.png);
-	background-position: 14px 7px;
-	color:#558e6a;
-}
-
-.appbar li.active .appbar__link--portfolio{
-	background-image: url(/images/folio-ico-active.png);
-	background-position: 14px 7px;
-	color:#558e6a;
-}
-
-.appbar li.active .appbar__link--contact{
-	background-image: url(/images/contact-ico-active.png);
-	background-position: 14px 7px;
-	color:#558e6a;
+	background-position: px-rem(14) px-rem(7);
 }
