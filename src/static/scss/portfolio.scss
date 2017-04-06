@@ -1,7 +1,7 @@
-#portfolio{
+#portfolio {
 	width: px-rem(478);
 
-	h1{
+	h1 {
 		font-family: $signika;
 		font-size: px-rem(18px);
 		color: $green;
@@ -9,12 +9,12 @@
 		padding: 0;
 	}
 
-	ul{
+	ul {
 		font-size: px-rem(12);
 	}
 }
 
-.portfolio_categories{
+.portfolio_categories {
 	padding-left: px-rem(23);
 	border-bottom: 1px dotted $gray;
 	position: relative;
@@ -25,7 +25,7 @@
 		padding: px-rem(3) px-rem(3) px-rem(3) px-rem(6);
 	}
 
-	a{
+	a {
 		color: #777;
 		display: inline-block;
 		font-size: px-rem(14);
@@ -35,22 +35,22 @@
 		-ms-transition: all 0.4s ease-in-out;
 		-webkit-transition: all 0.4s ease-in-out;
 		transition: all 0.4s ease-in-out;
-		&:hover{
+		&:hover {
 			color: $green;
 		}
 	}
 
-	span{
+	span {
 		color: #777;
 	}
 }
 
 
-.portfolio__works{
+.portfolio__works {
 	margin-left: px-rem(1);
 }
 
-.current a{
+.current a {
 	color: $green;
 	-moz-transition: all 0.4s ease-in-out;
 	-o-transition: all 0.4s ease-in-out;
@@ -67,7 +67,7 @@
 
 	img { width: 100%; }
 
-	h3{
+	h3 {
 		font-weight: bold;
 		margin-top: px-rem(5);
 		color: #666;
@@ -76,7 +76,7 @@
 		border-bottom: 1px solid $gray;
 		padding-bottom: px-rem(10);
 
-		span{
+		span {
 			font-weight: normal;
 			margin-top: px-rem(5);
 			color: $green;

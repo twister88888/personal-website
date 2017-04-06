@@ -1,30 +1,30 @@
-.logo{
+.logo {
 	margin-left: px-rem(12);
 	margin-bottom: px-rem(50);
 	position: relative;
 
-	img{
+	img {
 		border-radius: $border-radius;
 		-moz-border-radius: $border-radius;
 		-o-border-radius: $border-radius;
 		-webkit-border-radius: $border-radius;
 	}
 
-	h1{
+	h1 {
 		font-weight: bold;
 		font-size: px-rem(23);
 		color: $white;
 		margin-bottom: px-rem(3);
 	}
 
-	h2{
+	h2 {
 		font-size: px-rem(12);
 		color: $white;
 		padding-bottom: px-rem(3);
 	}
 }
 
-.logo__info{
+.logo__info {
 	background: #558e6a;
 	width: px-rem(218);
 	border-radius: 0px 0px 4px 4px;

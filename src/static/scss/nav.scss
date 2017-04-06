@@ -1,7 +1,7 @@
-.appbar{
+.appbar {
 	margin-left: px-rem(6);
 
-	li{
+	li {
 		display:inline-block;
 		margin-left: px-rem(5);
 		margin-bottom: px-rem(5);
@@ -22,7 +22,7 @@
 		background: -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
 		background: linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
 
-		& > a{
+		& > a {
 			color: #999;
 			display: inline-block;
 			padding: px-rem(11) px-rem(10) px-rem(10) px-rem(142);
@@ -35,23 +35,23 @@
 			height: px-rem(21);
 		}
 
-		&.active{
+		&.active {
 			border-right: 5px solid $green;
 			background: $white url(/images/nav-arrow-active.png) no-repeat 102% center;
 
-			.appbar__link--about{
+			.appbar__link--about {
 				background-image: url(/images/about-ico-active.png);
 				background-position: px-rem(14) px-rem(7);
 				color: $green;
 			}
 
-			.appbar__link--portfolio{
+			.appbar__link--portfolio {
 				background-image: url(/images/folio-ico-active.png);
 				background-position: px-rem(14) px-rem(7);
 				color: $green;
 			}
 
-			.appbar__link--contact{
+			.appbar__link--contact {
 				background-image: url(/images/contact-ico-active.png);
 				background-position: px-rem(14) px-rem(7);
 				color: $green;
@@ -61,17 +61,17 @@
 }
 
 
-.appbar__link--about{
+.appbar__link--about {
 	background-image: url(/images/about-ico.png);
 	background-position: px-rem(14) px-rem(7);
 }
 
-.appbar__link--portfolio{
+.appbar__link--portfolio {
 	background-image: url(/images/folio-ico.png);
 	background-position: px-rem(14) px-rem(7);
 }
 
-.appbar__link--contact{
+.appbar__link--contact {
 	background-image: url(/images/contact-ico.png);
 	background-position: px-rem(14) px-rem(7);
 }

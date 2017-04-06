@@ -241,11 +241,11 @@ class App extends Component {
               <section className='contact__personalinfo'></section>
               <section className='contact__personalinfo clearfix'>
                 <SectionSubTitle subtitle='Información de contacto' />
-                <ul className='personal'>
+                <ul className='contact__list'>
                   <List label='Tel' value='605 230 463' />
                   <List label='Skype' value='pending' />
                 </ul>
-                <ul className='personal'>
+                <ul className='contact__list'>
                   <List label='Email' value='pending' />
                 </ul>
               </section>

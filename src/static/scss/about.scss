@@ -1,13 +1,13 @@
-.about{
+.about {
 	font-size: px-rem(12);
 	width: px-rem(478);
 
-	p{
+	p {
 		padding: 0;
 		margin: 0;
 	}
 
-	h1{
+	h1 {
 		font-family: $signika;
 		font-weight: 400;
 		font-size: px-rem(18);
@@ -16,13 +16,13 @@
 		padding: 0;
 	}
 
-	h4{
+	h4 {
 		font-size: px-rem(12);
 		color: #666;
 		font-weight: bold;
 	}
 
-	h6{
+	h6 {
 		font-size: px-rem(11);
 		color: #333;
 		font-weight: bold;
@@ -30,11 +30,11 @@
 	}
 }
 
-.about__info-list{
+.about__info-list {
 	float:left;
 	margin-right: px-rem(8);
 
-	li{
+	li {
 		background: #efefef;
 		border-radius: $border-radius;
 		-moz-border-radius: $border-radius;
@@ -52,23 +52,23 @@
 
 .about__skills,
 .about__info,
-.about__experience{
+.about__experience {
 	padding-bottom: px-rem(10);
 	margin-bottom: px-rem(10);
 	border-bottom: 1px dotted #e3e2e2;
 }
 
-.about__education{
+.about__education {
 	margin-bottom: px-rem(20);
 }
 
-.about__skills{
-	ul{
+.about__skills {
+	ul {
 		float: left;
 		width: px-rem(237);
 	}
 
-	li{
+	li {
 		color: #666;
 		font-size: px-rem(12);
 		font-weight: bold;
@@ -77,35 +77,23 @@
 		width: px-rem(200);
 	}
 
-	span{
+	span {
 		float: right;
 		width: px-rem(113);
 		height: px-rem(17);
 	}
 
-	.r1{background: url(/images/rating-sprite.png) no-repeat scroll 0 px-rem(-56)}
-	.r2{background: url(/images/rating-sprite.png) no-repeat scroll 0 px-rem(-76)}
-	.r3{background: url(/images/rating-sprite.png) no-repeat scroll 0 px-rem(-36)}
-	.r4{background: url(/images/rating-sprite.png) no-repeat scroll 0 px-rem(-56)}
-	.r5{background: url(/images/rating-sprite.png) no-repeat scroll 0 px-rem(-76)}
-	.r6{background: url(/images/rating-sprite.png) no-repeat scroll 0 px-rem(-56)}
-	.r7{background: url(/images/rating-sprite.png) no-repeat scroll 0 px-rem(-76)}
-	.r8{background: url(/images/rating-sprite.png) no-repeat scroll 0 px-rem(-36)}
-	.r9{background: url(/images/rating-sprite.png) no-repeat scroll 0 px-rem(-76)}
-	.r10{background: url(/images/rating-sprite.png) no-repeat scroll 0 px-rem(-56)}
+	.r1 {background: url(/images/rating-sprite.png) no-repeat scroll 0 px-rem(-56)}
+	.r2 {background: url(/images/rating-sprite.png) no-repeat scroll 0 px-rem(-76)}
+	.r3 {background: url(/images/rating-sprite.png) no-repeat scroll 0 px-rem(-36)}
+	.r4 {background: url(/images/rating-sprite.png) no-repeat scroll 0 px-rem(-56)}
+	.r5 {background: url(/images/rating-sprite.png) no-repeat scroll 0 px-rem(-76)}
+	.r6 {background: url(/images/rating-sprite.png) no-repeat scroll 0 px-rem(-56)}
+	.r7 {background: url(/images/rating-sprite.png) no-repeat scroll 0 px-rem(-76)}
+	.r8 {background: url(/images/rating-sprite.png) no-repeat scroll 0 px-rem(-36)}
+	.r9 {background: url(/images/rating-sprite.png) no-repeat scroll 0 px-rem(-76)}
+	.r10 {background: url(/images/rating-sprite.png) no-repeat scroll 0 px-rem(-56)}
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .about__skill {
 	float: left;
