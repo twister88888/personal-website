@@ -10,7 +10,7 @@
 	}
 
 	h4 {
-		color: #666;
+		color: $gray-new;
 		font-size: px-rem(12);
 		font-weight: bold;
 		margin-bottom: px-rem(10);
@@ -18,12 +18,12 @@
 }
 
 .contact__personalinfo {
-	margin-bottom:px-rem(10);
-	padding-bottom:12px;
-	border-bottom:1px dotted #e3e2e2;
+	margin-bottom: px-rem(10);
+	padding-bottom: px-rem(12);
+	border-bottom: 1px dotted $gray;
 
 	ul + ul {
-		margin-left:28px;
+		margin-left: px-rem(28);
 	}
 }
 
@@ -32,21 +32,21 @@
 	font-size: px-rem(12);
 
 	span {
-		font-weight:bold;
-		color: #666;
+		font-weight: bold;
+		color: $gray-new;
 	}
 }
 
 .input-text,
 .textarea {
-	margin-bottom:px-rem(10);
-	padding-left:px-rem(10);
+	margin-bottom: px-rem(10);
+	padding-left: px-rem(10);
 	moz-transition: border 0.3s ease 0s, color 0.3s ease-out 0s;
 	-moz-transition: all 0.4s ease-in-out;
 	-o-transition: all 0.4s ease-in-out;
 	-ms-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
-	background: #efefef;
+	background: $gray-darker;
 	border: 1px solid $gray-white;
 	border-radius: $border-radius;
 	-moz-border-radius:$border-radius;
@@ -104,15 +104,15 @@
 	-ms-transition: all 0.4s ease-in-out;
 	-webkit-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
-}
 
-.input-submit:hover {
-	background-color: #777;
-	border: 1px solid #777;
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-	-o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	&:hover {
+		background-color: $gray-lighter;
+		border: 1px solid $gray-lighter;
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+		-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+		-o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+		-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	}
 }
 
 .error {

@@ -11,20 +11,20 @@
 		font-family: $signika;
 		font-weight: 400;
 		font-size: px-rem(18);
-		color: #558e6a;
+		color: $green;
 		margin: 0 0 px-rem(10) 0;
 		padding: 0;
 	}
 
 	h4 {
 		font-size: px-rem(12);
-		color: #666;
+		color: $gray-new;
 		font-weight: bold;
 	}
 
 	h6 {
 		font-size: px-rem(11);
-		color: #333;
+		color: $gray-dark;
 		font-weight: bold;
 		font-style: italic;
 	}
@@ -35,17 +35,17 @@
 	margin-right: px-rem(8);
 
 	li {
-		background: #efefef;
+		background: $gray-darker;
 		border-radius: $border-radius;
 		-moz-border-radius: $border-radius;
 		-o-border-radius: $border-radius;
 		-webkit-border-radius: $border-radius;
-		color: #666;
+		color: $gray-new;
 		font-size: px-rem(11);
 		margin-bottom: px-rem(10);
 		margin-top: px-rem(9);
 		padding: px-rem(6) px-rem(44) px-rem(5) px-rem(10);
-		border-left: 3px solid #ccc;
+		border-left: 3px solid $gray-white;
 		font-weight: bold;
 	}
 }
@@ -55,7 +55,7 @@
 .about__experience {
 	padding-bottom: px-rem(10);
 	margin-bottom: px-rem(10);
-	border-bottom: 1px dotted #e3e2e2;
+	border-bottom: 1px dotted $gray;
 }
 
 .about__education {
@@ -69,7 +69,7 @@
 	}
 
 	li {
-		color: #666;
+		color: $gray-new;
 		font-size: px-rem(12);
 		font-weight: bold;
 		padding-bottom: px-rem(3);
@@ -97,6 +97,6 @@
 
 .about__skill {
 	float: left;
-	margin-right: 74px;
-	width: 165px;
+	margin-right: px-rem(74);
+	width: px-rem(165);
 }

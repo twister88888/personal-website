@@ -330,7 +330,6 @@ footer p {
       font-family: "Signika", Arial;
       font-weight: 300;
       font-size: 1.0625rem;
-      color: #787878;
       width: 4.0625rem;
       height: 1.3125rem; }
     .appbar li.active {
@@ -710,8 +709,8 @@ footer p {
 
 .about__skill {
   float: left;
-  margin-right: 74px;
-  width: 165px; }
+  margin-right: 4.625rem;
+  width: 10.3125rem; }
 
 #portfolio {
   width: 29.875rem; }
@@ -733,7 +732,7 @@ footer p {
     padding: 0.5rem;
     padding: 0.1875rem 0.1875rem 0.1875rem 0.375rem; }
   .portfolio_categories a {
-    color: #777;
+    color: #999;
     display: inline-block;
     font-size: 0.875rem;
     font-family: "Signika", Arial;
@@ -745,7 +744,7 @@ footer p {
     .portfolio_categories a:hover {
       color: #558e6a; }
   .portfolio_categories span {
-    color: #777; }
+    color: #999; }
 
 .portfolio__works {
   margin-left: 0.0625rem; }
@@ -811,10 +810,10 @@ footer p {
 
 .contact__personalinfo {
   margin-bottom: 0.625rem;
-  padding-bottom: 12px;
+  padding-bottom: 0.75rem;
   border-bottom: 1px dotted #e3e2e2; }
   .contact__personalinfo ul + ul {
-    margin-left: 28px; }
+    margin-left: 1.75rem; }
 
 .contact__list {
   float: left;
@@ -884,14 +883,13 @@ footer p {
   -ms-transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out; }
-
-.input-submit:hover {
-  background-color: #777;
-  border: 1px solid #777;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
+  .input-submit:hover {
+    background-color: #777;
+    border: 1px solid #777;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
 
 .error {
   display: block;

@@ -7,7 +7,7 @@
 		margin-bottom: px-rem(5);
 		width: px-rem(215);
 		height: px-rem(40);
-		border-right: 5px solid #e3e2e2;
+		border-right: 5px solid $gray;
 		float: left;
 		border-radius: $border-radius;
 		-moz-border-radius: $border-radius;
@@ -23,14 +23,13 @@
 		background: linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
 
 		& > a {
-			color: #999;
+			color: $gray-lighter;
 			display: inline-block;
 			padding: px-rem(11) px-rem(10) px-rem(10) px-rem(142);
 			background-repeat: no-repeat;
 			font-family: $signika;
 			font-weight: 300;
 			font-size: px-rem(17);
-			color: #787878;
 			width: px-rem(65);
 			height: px-rem(21);
 		}
