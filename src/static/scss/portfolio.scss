@@ -3,14 +3,14 @@
 
 	h1 {
 		font-family: $signika;
-		font-size: px-rem(18px);
+		@include font-size(18px);
 		color: $green;
 		margin:0 0 px-rem(10) 0;
 		padding: 0;
 	}
 
 	ul {
-		font-size: px-rem(12);
+		@include font-size(12);
 	}
 
 	@include respond-min-max($mediumWidth, $largeWidth){
@@ -38,7 +38,7 @@
 	a {
 		color: $gray-lighter;
 		display: inline-block;
-		font-size: px-rem(14);
+		@include font-size(14);
 		font-family: $signika;
 		-moz-transition: all 0.4s ease-in-out;
 		-o-transition: all 0.4s ease-in-out;
@@ -108,7 +108,7 @@
 		padding-bottom: px-rem(10);
 
 		@include respond-min-max($small, $mediumMin){
-			width: px-rem(190); 
+			width: px-rem(190);
 		}
 
 		span {

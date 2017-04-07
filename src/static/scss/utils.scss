@@ -79,31 +79,14 @@ $old-ie: false !default;
 // --------------------------------------------------
 //  Unstyled list
 // --------------------------------------------------
-%list-unstyled {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.clearfix:before,
+.clearfix:after {
+	content:"";
+	display:table;
 }
 
-%clearfix {
-
-    &:after {
-        clear: both;
-        content: "";
-        display: table;
-    }
-}
-
-.clearfix {
-    @extend %clearfix;
-}
-
-@mixin clearfix {
-        &:after {
-        clear: both;
-        content: "";
-        display: table;
-    }
+.clearfix:after {
+	clear:both;
 }
 
 // --------------------------------------------------

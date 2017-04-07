@@ -16,13 +16,13 @@
 
 	h1 {
 		font-weight: bold;
-		font-size: px-rem(23);
+		@include font-size(23);
 		color: $white;
 		margin-bottom: px-rem(3);
 	}
 
 	h2 {
-		font-size: px-rem(12);
+		@include font-size(12);
 		color: $white;
 		padding-bottom: px-rem(3);
 	}
@@ -47,7 +47,7 @@
 	top: px-rem(193);
 	left: 0;
 	line-height: px-rem(28);
-	
+
 	@include respond-max($smallMin) {
 		top: px-rem(196);
 		width: px-rem(271);

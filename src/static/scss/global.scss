@@ -84,7 +84,7 @@ header {
 footer {
 	p {
 		color: $gray-white;
-		font-size: px-rem(11);
+		@include font-size(11)
 		margin-top: px-rem(5);
 		margin-left: px-rem(400);
 
@@ -98,14 +98,4 @@ footer {
 			margin-left: px-rem(50);
 		}
 	}
-}
-
-.clearfix:before,
-.clearfix:after {
-	content:"";
-	display:table;
-}
-
-.clearfix:after {
-	clear:both;
 }
