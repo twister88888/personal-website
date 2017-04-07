@@ -1,4 +1,16 @@
 $fix-mqs: false !default;
+@mixin respond-min-max($min, $max){
+  @if $fix-mqs {
+    @if $fix-mqs >= $min { //mejorar
+        @content;
+    }
+  }
+  @else {
+      @media screen and (min-width: $min) and (max-width: $max) {
+        @content;
+      }
+  }
+}
 
 @mixin respond-min($width) {
     @if $fix-mqs {

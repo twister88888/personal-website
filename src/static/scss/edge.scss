@@ -2,4 +2,8 @@
 	position: absolute;
 	top: 0;
 	left: px-rem(480);
+
+	@include respond-max($smallMin) {
+		left: px-rem(226);
+	}
 }

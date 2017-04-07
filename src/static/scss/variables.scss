@@ -21,16 +21,19 @@ $gray-darker: #efefef;
 $border-radius: px-rem(4);
 
 // Width
-$baseWidth: 1400;
-$smallWidth: 320;
-$mediumWidth: 640;
-$largeWidth: 980;
+$baseWidth: 780;
+$smallWidth: 480;
+$mediumWidth: 768;
+$largeWidth: 959;
 $extraLargeWidth: 1240;
+
 
 // Breakpoints
 $small: px-rem($smallWidth);
 $medium: px-rem($mediumWidth);
 $large: px-rem($largeWidth);
+$smallMin: px-rem($smallWidth - 1);
+$mediumMin: px-rem($mediumWidth - 1);
 $largeMin: px-rem($largeWidth - 1);
 $extralarge: px-rem($extraLargeWidth);
 

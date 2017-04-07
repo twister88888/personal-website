@@ -1,5 +1,5 @@
 #portfolio {
-	width: px-rem(478);
+	width: 478px;
 
 	h1 {
 		font-family: $signika;
@@ -11,6 +11,16 @@
 
 	ul {
 		font-size: px-rem(12);
+	}
+
+	@include respond-min-max($mediumWidth, $largeWidth){
+		width: px-rem(464);
+	}
+	@include respond-min-max($small, $mediumMin){
+		width: px-rem(196);
+	}
+	@include respond-max($smallMin) {
+		width: px-rem(230);
 	}
 }
 
@@ -43,11 +53,23 @@
 	span {
 		color: $gray-lighter;
 	}
+
+	@include respond-max($smallMin) {
+		padding-left:0;
+	}
 }
 
 
 .portfolio__works {
 	margin-left: px-rem(1);
+
+	@include respond-min-max($small, $mediumMin){
+		margin-left: px-rem(-5);
+	}
+
+	@include respond-min-max($mediumWidth, $largeWidth){
+		margin: 0;
+	}
 }
 
 .current a {
@@ -65,6 +87,15 @@
 	padding: px-rem(5) px-rem(5) px-rem(14);
 	position: relative;
 
+	@include respond-min-max($mediumWidth, $largeWidth){
+		margin-right: px-rem(3);
+		padding: px-rem(5) px-rem(2) px-rem(14);
+	}
+
+	@include respond-min-max($small, $mediumMin){
+			.item { padding: px-rem(3) 0; }
+	}
+
 	img { width: 100%; }
 
 	h3 {
@@ -76,6 +107,10 @@
 		border-bottom: 1px solid $gray;
 		padding-bottom: px-rem(10);
 
+		@include respond-min-max($small, $mediumMin){
+			h3 { width: px-rem(190); }
+		}
+		
 		span {
 			font-weight: normal;
 			margin-top: px-rem(5);
@@ -90,6 +125,17 @@
 		position: absolute;
 		top: px-rem(185);
 		width: px-rem(110);
+
+		@include respond-min-max($small, $mediumMin){
+			left: px-rem(51);
+			top: px-rem(165);
+			width: px-rem(90);
+		}
+
+		@include respond-max($smallMin) {
+			top: px-rem(179);
+			left: px-rem(58);
+		}
 	}
 
 	.plus {
@@ -102,5 +148,14 @@
 		width: px-rem(45);
 		color: $green;
 		z-index: 100;
+
+		@include respond-min-max($small, $mediumMin){
+			left: px-rem(154);
+			top: px-rem(79);
+		}
+
+		@include respond-max($smallMin) {
+			left: px-rem(180);
+		}
 	}
 }

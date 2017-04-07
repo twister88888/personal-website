@@ -1,3 +1,9 @@
+#about{
+	@include respond-max($smallMin) {
+		width: px-rem(230);
+	}
+}
+
 .about {
 	font-size: px-rem(12);
 	width: px-rem(478);
@@ -47,6 +53,10 @@
 		padding: px-rem(6) px-rem(44) px-rem(5) px-rem(10);
 		border-left: 3px solid $gray-white;
 		font-weight: bold;
+	}
+
+	@include respond-max($smallMin) {
+		margin-right: px-rem(23);
 	}
 }
 
@@ -99,4 +109,8 @@
 	float: left;
 	margin-right: px-rem(74);
 	width: px-rem(165);
+
+	@include respond-max($smallMin) {
+		margin-bottom: px-rem(10);
+	}
 }

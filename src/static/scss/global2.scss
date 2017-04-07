@@ -1,0 +1,216 @@
+body {
+	background: url('/images/pattern/pattern3.png') repeat;
+	font-family: $arial;
+	line-height: px-rem(20);
+	font-weight: normal;
+	font-style: normal;
+	color: $gray-lighter;
+}
+
+#wrapper {
+	margin: px-rem(50) auto px-rem(30) auto;
+	width: px-rem($baseWidth);
+}
+
+header {
+	width: px-rem(230);
+	float: left;
+}
+
+.page {
+	width: px-rem(525);
+	float: left;
+	background: $gray;
+	border-radius: $border-radius;
+	-moz-border-radius: $border-radius;
+	-o-border-radius: $border-radius;
+	-webkit-border-radius: $border-radius;
+	padding: px-rem(3) px-rem(3) px-rem(3) 0;
+	margin-left: px-rem(7);
+	margin-bottom: px-rem(10);
+	position:relative;
+}
+
+.content {
+	background: $white;
+	margin: 0 auto;
+	border-radius: $border-radius;
+	-moz-border-radius: $border-radius;
+	-o-border-radius: $border-radius;
+	-webkit-border-radius: $border-radius;
+	padding: px-rem(20) px-rem(25) px-rem(35) px-rem(25);
+}
+
+footer {
+	p {
+		color: $gray-white;
+		font-size: px-rem(11);
+		margin-top: px-rem(5);
+		margin-left: px-rem(400);
+	}
+}
+
+.clearfix:before,
+.clearfix:after {
+	content:"";
+	display:table;
+}
+
+.clearfix:after {
+	clear:both;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+	/* Wrapper style */
+	#wrapper{width:750px;}
+
+	/* Header */
+	header{width:215px;}
+
+	/* tabsContainer */
+	.tabsContainer {margin-left: 22px;width: 510px;}
+
+	/*Edge*/
+	.edge {left: 465px;}
+
+	/*About tab */
+	#about{width:464px;}
+	#introduction ul li {padding: 6px 38px 5px 10px;}
+	#skills1, #skills2 {margin-right: 66px;}
+	a.vcardButton{margin-left:322px;}
+
+
+	/*Portfolio tab */
+	#portfolio{width:464px;}
+	#works {margin:0}
+	ul li.item {margin-right: 3px;padding: 5px 2px 14px;}
+
+
+	/* Blog tab */
+	.btnMore {margin-left: 330px;}
+	blockquote.style3 {padding-right: 20px;}
+
+	/* Contact tab */
+	#contact{width:464px;}
+	#contact p.personal{margin-right: 15px;}
+	#contactForm textarea {width: 450px;}
+
+	/* Footer */
+	footer p {margin-left: 395px;}
+
+	/*Styleswitcher*/
+	#styleSwitcher{display:none;}
+
+}
+
+
+/* Mobile Landscape Size -> Tablet Portrait size*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	/* Wrapper style */
+	#wrapper{width:480px;}
+
+	/* Header */
+	header{width:195px;}
+
+	/* innerBg*/
+	.innerBg {padding: 20px 22px 35px;}
+
+	/*Edge*/
+	.edge {left: 186px;}
+
+	/* tabsContainer */
+	.tabsContainer {margin-left: 41px;width: 231px;}
+
+	/*About tab */
+	#about{width:196px;}
+	#skills1{margin-bottom: 10px;}
+	#skills li span {width: 125px;}
+	a.vcardButton{margin-left:49px;}
+	.info {margin-right: 3px;}
+
+
+	/*Portfolio tab */
+	#portfolio{width:196px;}
+	#works {margin-left: -5px;}
+	ul#category {padding-left: 0;}
+	ul#category li {padding: 3px 0px 3px 0px;}
+	li.item h3{width:190px;}
+	span.plus {left: 154px;top:79px;}
+	span.border { left: 51px;top: 165px;width: 90px;}
+	#category li #animated-line{display:none;}
+
+
+
+
+	/*Contact tab */
+	#contact{width:196px;}
+	#contact p.personal, #contact ul.personal {margin-bottom: 10px;}
+	#pagination #prev {margin-right: 92px;}
+	#contact #personalInfo ul + ul {margin-left:0;}
+	#contactForm input[type="text"], #contact input[type="email"], #contact input[type="text"], #contact textarea {width:175px;}
+	#contact textarea {width:176px;}
+
+	/*Footer*/
+	footer p {margin-left: 256px;}
+
+	#styleSwitcher{display:none;}
+
+}
+
+
+/* Mobile Portrait Size -> Mobile Landscape Size */
+@media only screen and (max-width: 479px) {
+
+	/* Wrapper style */
+	#wrapper{width:295px;}
+
+	/* Header */
+	header{width:270px;}
+
+	/* innerBg*/
+
+	.innerBg {padding: 20px 22px 35px;}
+
+	/*Edge*/
+
+	.edge {left: 226px;}
+
+	/*Main nav*/
+	/*.appbar li.active {background: url("images/nav-arrow-active.png") no-repeat scroll 101% center #FFFFFF;}*/
+
+	/*tabsContainer*/
+	.tabsContainer {margin-left: 10px;width: 271px;}
+	#img {margin-bottom: 2px;}
+	#img img {width: 271px;}
+	#img div {top:196px;width:271px;}
+	.appbar li {width:267px;}
+	.appbar li > a {padding: 11px 10px 10px 195px;}
+
+	/*About tab */
+	#about{width:230px;}
+	.info {margin-right:23px;}
+	#skills1{margin-bottom: 10px;}
+	a.vcardButton{margin-left:80px;}
+
+	/*Portfolio tab */
+	#portfolio{width:230px;}
+	span.border {top: 179px;left:58px;}
+	span.plus {left:180px;}
+	ul#category {padding-left:0;}
+
+
+	/*Contact tab */
+	#contact{width:230px;}
+	#contact p.personal, #contact ul.personal {margin-bottom: 10px;}
+	#contact #personalInfo ul + ul {margin-left:0;}
+	#contactForm input[type="text"], #contact input[type="email"], #contact input[type="text"]{width:210px;}
+	#contact textarea {width:211px;}
+
+	/*Footer*/
+	footer p {margin-left: 50px;}
+
+	/*Styleswitcher*/
+	#styleSwitcher{display:none;}
+
+}
