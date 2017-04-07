@@ -11,6 +11,12 @@ body {
 	margin: px-rem(50) auto px-rem(30) auto;
 	width: px-rem($baseWidth);
 
+	@include respond-min-max($mediumWidth, $largeWidth){
+		width: px-rem(750);
+	}
+	@include respond-min-max($small, $mediumMin){
+		width: px-rem(480);
+	}
 	@include respond-max($smallMin) {
 		width: px-rem(295);
 	}
@@ -20,6 +26,12 @@ header {
 	width: px-rem(230);
 	float: left;
 
+	@include respond-min-max($mediumWidth, $largeWidth){
+		width: px-rem(215);
+	}
+	@include respond-min-max($small, $mediumMin){
+		width: px-rem(195);
+	}
 	@include respond-max($smallMin) {
 		width: px-rem(270);
 	}
@@ -38,6 +50,14 @@ header {
 	margin-bottom: px-rem(10);
 	position:relative;
 
+	@include respond-min-max($mediumWidth, $largeWidth){
+		margin-left: px-rem(22);
+		width: px-rem(510);
+	}
+	@include respond-min-max($small, $mediumMin){
+		margin-left: px-rem(41);
+		width: px-rem(231);
+	}
 	@include respond-max($smallMin) {
 		margin-left: px-rem(10);
 		width: px-rem(271);
@@ -53,6 +73,9 @@ header {
 	-webkit-border-radius: $border-radius;
 	padding: px-rem(20) px-rem(25) px-rem(35) px-rem(25);
 
+	@include respond-min-max($small, $mediumMin){
+		padding: px-rem(20) px-rem(22) px-rem(35);
+	}
 	@include respond-max($smallMin) {
 		padding: px-rem(20) px-rem(22) px-rem(35);
 	}
@@ -65,6 +88,12 @@ footer {
 		margin-top: px-rem(5);
 		margin-left: px-rem(400);
 
+		@include respond-min-max($mediumWidth, $largeWidth){
+			margin-left: px-rem(395);
+		}
+		@include respond-min-max($small, $mediumMin){
+			margin-left: px-rem(256);
+		}
 		@include respond-max($smallMin) {
 			margin-left: px-rem(50);
 		}
@@ -79,50 +108,4 @@ footer {
 
 .clearfix:after {
 	clear:both;
-}
-
-/* Tablet Portrait size -> standard 960 */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-	#wrapper { width:750px; }
-	header { width:215px; }
-	.page {
-		margin-left: px-rem(22);
-		width: px-rem(510);
-	}
-	.edge { left: px-rem(465); }
-	#about { width: 464px; }
-	.about__info ul li { padding: px-rem(6) px-rem(38) px-rem(5) px-rem(10); }
-	.about__skill { margin-right: px-rem(66); }
-	
-	.btnMore { margin-left: px-rem(330); }
-	blockquote.style3 { padding-right: px-rem(20); }
-	#contact { width: 464px; }
-	#contact p.personal { margin-right: px-rem(15); }
-	.contact__area textarea { width: px-rem(450); }
-	footer p { margin-left: px-rem(395); }
-}
-
-
-/* Mobile Landscape Size -> Tablet Portrait size*/
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-	#wrapper { width: px-rem(480); }
-	header { width: px-rem(195); }
-  .content { padding: px-rem(20) px-rem(22) px-rem(35); }
-	.edge { left: px-rem(186); }
-	.page {
-		margin-left: px-rem(41);
-		width: px-rem(231);
-	}
-	#about { width: 196px; }
-	.about__skill { margin-bottom: px-rem(10); }
-	.about__skills li span { width: px-rem(125); }
-	.about__info-list { margin-right: px-rem(3); }
-
-
-	#contact { width: 196px; }
-	#contact p.personal, #contact ul.personal { margin-bottom: px-rem(10); }
-	#contact .contact__personalinfo ul + ul { margin-left:0; }
-	.contact__area input[type="text"], #contact input[type="email"], #contact input[type="text"], #contact textarea { width:175px; }
-	#contact textarea { width: px-rem(176); }
-	footer p { margin-left: px-rem(256); }
 }

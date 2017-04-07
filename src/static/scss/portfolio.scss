@@ -108,9 +108,9 @@
 		padding-bottom: px-rem(10);
 
 		@include respond-min-max($small, $mediumMin){
-			h3 { width: px-rem(190); }
+			width: px-rem(190); 
 		}
-		
+
 		span {
 			font-weight: normal;
 			margin-top: px-rem(5);

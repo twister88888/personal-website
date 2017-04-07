@@ -16,6 +16,12 @@
 		margin-bottom: px-rem(10);
 	}
 
+	@include respond-min-max($mediumWidth, $largeWidth){
+		width: px-rem(464);
+	}
+	@include respond-min-max($small, $mediumMin){
+		width: px-rem(196);
+	}
 	@include respond-max($smallMin) {
 		width: px-rem(230);
 	}
@@ -29,14 +35,17 @@
 	ul + ul {
 		margin-left: px-rem(28);
 
+		@include respond-min-max($small, $mediumMin){
+			margin-left: 0;
+		}
 		@include respond-max($smallMin) {
-			margin-left:0;
+			margin-left: 0;
 		}
 	}
 }
 
 .contact__list {
-	float:left;
+	float: left;
 	font-size: px-rem(12);
 
 	span {
@@ -79,6 +88,9 @@
 	width: px-rem(300);
 	height: px-rem(27);
 
+	@include respond-min-max($small, $mediumMin){
+		width: px-rem(175);
+	}
 	@include respond-max($smallMin) {
 		width: px-rem(210);
 	}
@@ -91,6 +103,12 @@
 	padding-top: px-rem(10);
 	margin-bottom: px-rem(15);
 
+	@include respond-min-max($mediumWidth, $largeWidth){
+		width: px-rem(450);
+	}
+	@include respond-min-max($small, $mediumMin){
+		width: px-rem(175);
+	}
 	@include respond-max($smallMin) {
 		width: px-rem(210);
 	}

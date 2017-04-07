@@ -1,4 +1,10 @@
 #about{
+	@include respond-min-max($mediumWidth, $largeWidth){
+		width: px-rem(464);
+	}
+	@include respond-min-max($small, $mediumMin){
+		width: px-rem(196);
+	}
 	@include respond-max($smallMin) {
 		width: px-rem(230);
 	}
@@ -55,6 +61,13 @@
 		font-weight: bold;
 	}
 
+
+	@include respond-min-max($mediumWidth, $largeWidth){
+		padding: px-rem(6) px-rem(38) px-rem(5) px-rem(10);
+	}
+	@include respond-min-max($small, $mediumMin){
+		margin-right: px-rem(3);
+	}
 	@include respond-max($smallMin) {
 		margin-right: px-rem(23);
 	}
@@ -91,6 +104,10 @@
 		float: right;
 		width: px-rem(113);
 		height: px-rem(17);
+
+		@include respond-min-max($small, $mediumMin){
+			width: px-rem(125);
+		}
 	}
 
 	.r1 {background: url(/images/rating-sprite.png) no-repeat scroll 0 px-rem(-56)}
@@ -110,6 +127,12 @@
 	margin-right: px-rem(74);
 	width: px-rem(165);
 
+	@include respond-min-max($mediumWidth, $largeWidth){
+		margin-right: px-rem(66);
+	}
+	@include respond-min-max($small, $mediumMin){
+		margin-bottom: px-rem(10);
+	}
 	@include respond-max($smallMin) {
 		margin-bottom: px-rem(10);
 	}
