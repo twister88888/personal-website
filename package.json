@@ -10,6 +10,11 @@
     "load-grunt-tasks": "^3.5.2",
     "react-scripts": "0.9.3"
   },
+  "keywords": [
+   "react",
+   "firebase",
+   "grunt"
+ ],
   "dependencies": {
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
