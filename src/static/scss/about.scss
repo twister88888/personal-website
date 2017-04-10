@@ -57,7 +57,10 @@
 		margin-top: px-rem(9);
 		padding: px-rem(6) px-rem(44) px-rem(5) px-rem(10);
 		border-left: 3px solid $gray-white;
-		font-weight: bold;
+
+		span{
+			font-weight: bold;
+		}
 	}
 
 	@include respond-min-max($mediumWidth, $largeWidth){

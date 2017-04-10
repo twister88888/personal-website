@@ -117,14 +117,13 @@ class App extends Component {
       ]
     }
   }
+
   render() {
     return (
       <div id='wrapper' className='clearfix' itemScope='' itemType='http://data-vocabulary.org/Person'>
         <Header />
         <main className='page js-page clearfix' role='main'>
-        {/*<section className='tabsContainer clearfix'>*/}
           <Edge />
-          {/*quitar innerBg*/}
           <div className='content'>
             <article className='about js-about clearfix' id='about'>
               <section className='about__info clearfix'>
@@ -242,16 +241,16 @@ class App extends Component {
               <section className='contact__personalinfo clearfix'>
                 <SectionSubTitle subtitle='Información de contacto' />
                 <ul className='contact__list'>
-                  <List label='Tel' value='605 230 463' />
-                  <List label='Skype' value='pending' />
+                  <List label='Tel' value='+34 605 230 463' />
+                  <List label='Skype' value='twister88888' />
                 </ul>
                 <ul className='contact__list'>
-                  <List label='Email' value='pending' />
+                  <List label='Email' value='info@jmprogramadorweb.es' />
                 </ul>
               </section>
               <section className='contact__area clearfix'>
                 <SectionSubTitle subtitle='Rellena el formulario y en breve recibirás tu respuesta.' />
-                <form className='contact__form contactForm' method='post'>
+                <form className='contact__form' method='post'>
                   <Input
                     type='text'
                     name='name'

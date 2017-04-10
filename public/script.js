@@ -6592,34 +6592,5 @@ $(document).ready(function() {
         $(this).parent().addClass("current");
         e.preventDefault()
     });
-    $(".btnMore").click(function() {
-        $(this).parent(".blogPost").find(".read-more").toggle();
-        return false
-    });
-    $("a.replyDisplay, a.commentDisplay").fancybox({
-        "overlayShow": true,
-        "opacity": true,
-        "transitionIn": "elastic",
-        "transitionOut": "none",
-        "overlayOpacity": .8
-    });
-    $location = "Avenue de France, Agdal, Rabat, Rabat-Sal\u00e9-Zemmour-Za\u00ebr, Maroc";
-    $contactTabClass = "tab-contact";
-    $("#wrapper").bind("easytabs:after", function(evt, tab, panel, data) {
-        if (tab.hasClass($contactTabClass)) $("#map").gMap({
-            address: $location,
-            zoom: 18,
-            markers: [{
-                address: $location
-            }]
-        })
-    });
-    $(".contactForm").validate();
-    $(".replyForm").validate();
-    $(".commentForm").validate();
-    $(".switcher").click(function() {
-        var pattNumb = $(this).attr("data-id");
-        $("body").css("background-image", "url(images/pattern/pattern" +
-            pattNumb + ".png)")
-    })
+    $(".contact__form").validate();
 });
