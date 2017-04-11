@@ -11,10 +11,10 @@ body {
 	margin: px-rem(50) auto px-rem(30) auto;
 	width: px-rem($baseWidth);
 
-	@include respond-min-max($mediumWidth, $largeWidth){
+	@include respond-min-max($mediumWidth, $largeWidth) {
 		width: px-rem(750);
 	}
-	@include respond-min-max($small, $mediumMin){
+	@include respond-min-max($small, $mediumMin) {
 		width: px-rem(480);
 	}
 	@include respond-max($smallMin) {
@@ -26,10 +26,10 @@ header {
 	width: px-rem(230);
 	float: left;
 
-	@include respond-min-max($mediumWidth, $largeWidth){
+	@include respond-min-max($mediumWidth, $largeWidth) {
 		width: px-rem(215);
 	}
-	@include respond-min-max($small, $mediumMin){
+	@include respond-min-max($small, $mediumMin) {
 		width: px-rem(195);
 	}
 	@include respond-max($smallMin) {
@@ -50,11 +50,11 @@ header {
 	margin-bottom: px-rem(10);
 	position:relative;
 
-	@include respond-min-max($mediumWidth, $largeWidth){
+	@include respond-min-max($mediumWidth, $largeWidth) {
 		margin-left: px-rem(22);
 		width: px-rem(510);
 	}
-	@include respond-min-max($small, $mediumMin){
+	@include respond-min-max($small, $mediumMin) {
 		margin-left: px-rem(41);
 		width: px-rem(231);
 	}
@@ -73,7 +73,7 @@ header {
 	-webkit-border-radius: $border-radius;
 	padding: px-rem(20) px-rem(25) px-rem(35) px-rem(25);
 
-	@include respond-min-max($small, $mediumMin){
+	@include respond-min-max($small, $mediumMin) {
 		padding: px-rem(20) px-rem(22) px-rem(35);
 	}
 	@include respond-max($smallMin) {
@@ -88,10 +88,10 @@ footer {
 		margin-top: px-rem(5);
 		margin-left: px-rem(400);
 
-		@include respond-min-max($mediumWidth, $largeWidth){
+		@include respond-min-max($mediumWidth, $largeWidth) {
 			margin-left: px-rem(395);
 		}
-		@include respond-min-max($small, $mediumMin){
+		@include respond-min-max($small, $mediumMin) {
 			margin-left: px-rem(256);
 		}
 		@include respond-max($smallMin) {

@@ -1,5 +1,5 @@
 $fix-mqs: false !default;
-@mixin respond-min-max($min, $max){
+@mixin respond-min-max($min, $max) {
   @if $fix-mqs {
     @if $fix-mqs >= $min { //mejorar
         @content;

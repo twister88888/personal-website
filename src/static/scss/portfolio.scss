@@ -13,10 +13,10 @@
 		@include font-size(12);
 	}
 
-	@include respond-min-max($mediumWidth, $largeWidth){
+	@include respond-min-max($mediumWidth, $largeWidth) {
 		width: px-rem(464);
 	}
-	@include respond-min-max($small, $mediumMin){
+	@include respond-min-max($small, $mediumMin) {
 		width: px-rem(196);
 	}
 	@include respond-max($smallMin) {
@@ -63,11 +63,11 @@
 .portfolio__works {
 	margin-left: px-rem(1);
 
-	@include respond-min-max($small, $mediumMin){
+	@include respond-min-max($small, $mediumMin) {
 		margin-left: px-rem(-5);
 	}
 
-	@include respond-min-max($mediumWidth, $largeWidth){
+	@include respond-min-max($mediumWidth, $largeWidth) {
 		margin: 0;
 	}
 }
@@ -87,12 +87,12 @@
 	padding: px-rem(5) px-rem(5) px-rem(14);
 	position: relative;
 
-	@include respond-min-max($mediumWidth, $largeWidth){
+	@include respond-min-max($mediumWidth, $largeWidth) {
 		margin-right: px-rem(3);
 		padding: px-rem(5) px-rem(2) px-rem(14);
 	}
 
-	@include respond-min-max($small, $mediumMin){
+	@include respond-min-max($small, $mediumMin) {
 			.item { padding: px-rem(3) 0; }
 	}
 
@@ -107,7 +107,7 @@
 		border-bottom: 1px solid $gray;
 		padding-bottom: px-rem(10);
 
-		@include respond-min-max($small, $mediumMin){
+		@include respond-min-max($small, $mediumMin) {
 			width: px-rem(190);
 		}
 
@@ -126,7 +126,7 @@
 		top: px-rem(185);
 		width: px-rem(110);
 
-		@include respond-min-max($small, $mediumMin){
+		@include respond-min-max($small, $mediumMin) {
 			left: px-rem(51);
 			top: px-rem(165);
 			width: px-rem(90);
@@ -149,7 +149,7 @@
 		color: $green;
 		z-index: 100;
 
-		@include respond-min-max($small, $mediumMin){
+		@include respond-min-max($small, $mediumMin) {
 			left: px-rem(154);
 			top: px-rem(79);
 		}

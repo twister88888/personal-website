@@ -3,10 +3,10 @@
 	top: 0;
 	left: px-rem(480);
 
-	@include respond-min-max($mediumWidth, $largeWidth){
+	@include respond-min-max($mediumWidth, $largeWidth) {
 		left: px-rem(465);
 	}
-	@include respond-min-max($small, $mediumMin){
+	@include respond-min-max($small, $mediumMin) {
 		left: px-rem(186);
 	}
 	@include respond-max($smallMin) {
